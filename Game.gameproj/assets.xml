@@ -1,2 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<assets PGFVersion="0.19" GSCVersion="0.10.4.1"><sounds/><images/><behaviors/></assets>
+<?xml version="1.0" encoding="utf-8"?>
+<assets PGFVersion="0.19" GSCVersion="0.10.4">
+  <sounds />
+  <images>
+    <image name="Testd">
+      <file name="Testd.png" size="83408" />
+    </image>
+    <image name="Teste">
+      <file name="Teste.png" size="86230" />
+    </image>
+    <image name="wiz1">
+      <file name="wiz1.png" size="17453" />
+    </image>
+    <image name="lvl1_scenario">
+      <file name="lvl1_scenario.png" size="47359" />
+    </image>
+    <image name="lvl1_circle1_clock">
+      <file name="lvl1_circle1_clock.png" size="13800" />
+    </image>
+    <image name="lvl1_circle1_counterclock">
+      <file name="lvl1_circle1_counterclock.png" size="13831" />
+    </image>
+    <image name="lvl1_circle2_clock">
+      <file name="lvl1_circle2_clock.png" size="12757" />
+    </image>
+    <image name="lvl1_circle2_counterclock">
+      <file name="lvl1_circle2_counterclock.png" size="12996" />
+    </image>
+  </images>
+  <behaviors />
+</assets>

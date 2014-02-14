@@ -1,2 +1,37 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<game GSCVersion="0.10.4.1" PGFVersion="0.19" title="Game"><resolutionIndependence>1</resolutionIndependence><instructions>Add game instructions here.</instructions><resolution>12</resolution><longDescription>A tabula rasa, a blank slate on which one may create a masterpiece.</longDescription><prototypes/><plugins><attributes id="playhaven"/><attributes id="qqgamecenter"><boolean id="enabled">false</boolean></attributes></plugins><scenes><scene id="id269551"/></scenes><attributes><text id="name">default name</text><real id="time">0</real><size id="displaySize"><real id="width">568</real><real id="height">320</real></size><text id="actorTags"></text></attributes></game>
+<?xml version="1.0" encoding="utf-8"?>
+<game title="Game" GSCVersion="0.10.4" PGFVersion="0.19">
+  <attributes>
+    <text id="name">default name</text>
+    <real id="time">0</real>
+    <size id="displaySize">
+      <real id="width">568</real>
+      <real id="height">320</real>
+    </size>
+    <text id="actorTags" />
+  </attributes>
+  <tags />
+  <resolutionIndependence>1</resolutionIndependence>
+  <instructions>Add game instructions here.</instructions>
+  <resolution>12</resolution>
+  <longDescription>A tabula rasa, a blank slate on which one may create a masterpiece.</longDescription>
+  <prototypes>
+    <actor id="id260265" />
+    <actor id="id663216" />
+    <actor id="id259563" />
+    <actor id="id894561" />
+    <actor id="id652446" />
+    <actor id="id139761" />
+  </prototypes>
+  <plugins>
+    <attributes id="playhaven" />
+    <attributes id="qqgamecenter">
+      <boolean id="enabled">false</boolean>
+    </attributes>
+  </plugins>
+  <scenes>
+    <scene id="id911790" />
+    <scene id="id417353" />
+    <scene id="id969112" />
+    <scene id="id421575" />
+  </scenes>
+</game>

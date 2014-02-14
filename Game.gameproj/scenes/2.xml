@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<scene PGFVersion="0.19" GSCVersion="0.10.4" id="id911790">
+<scene PGFVersion="0.19" GSCVersion="0.10.4" id="id417353">
   <layers>
-    <layer id="id936278">
+    <layer id="id950948">
       <actors />
       <attributes>
         <text id="name">Background</text>
@@ -10,7 +10,7 @@
     </layer>
   </layers>
   <attributes>
-    <text id="name">Splash</text>
+    <text id="name">NewGame</text>
     <real id="time">0</real>
     <size id="size">
       <real id="width">568</real>
