@@ -3,6 +3,30 @@
   <layers>
     <layer id="id879616">
       <actors>
+        <actor id="id645565" prototype="id660038">
+          <attributes>
+            <point id="position">
+              <real id="x">210</real>
+              <real id="y">160</real>
+            </point>
+            <size id="size">
+              <real id="width">60</real>
+              <real id="height">60</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <image id="image">lvl1_square1_right</image>
+            <text id="name">lvl1_square1_right Copy 1</text>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
         <actor id="id879087" prototype="id260265">
           <attributes>
             <point id="position">
@@ -58,6 +82,29 @@
               <real id="height">120</real>
             </size>
             <angle id="rotation">90</angle>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id424255" prototype="id660038">
+          <attributes>
+            <point id="position">
+              <real id="x">30</real>
+              <real id="y">40</real>
+            </point>
+            <size id="size">
+              <real id="width">60</real>
+              <real id="height">60</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <image id="image">lvl1_square1_right</image>
           </attributes>
           <aspects>
             <graphics>

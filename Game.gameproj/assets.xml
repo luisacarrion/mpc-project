@@ -26,6 +26,9 @@
     <image name="lvl1_circle2_counterclock">
       <file name="lvl1_circle2_counterclock.png" size="12996" />
     </image>
+    <image name="lvl1_square1_right">
+      <file name="lvl1_square1_right.png" size="3861" />
+    </image>
   </images>
   <behaviors />
 </assets>
