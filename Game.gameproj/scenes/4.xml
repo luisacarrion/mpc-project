@@ -3,6 +3,59 @@
   <layers>
     <layer id="id879616">
       <actors>
+        <actor id="id879087" prototype="id260265">
+          <attributes>
+            <point id="position">
+              <real id="x">284</real>
+              <real id="y">160</real>
+            </point>
+            <size id="size">
+              <real id="width">568</real>
+              <real id="height">320</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+      </actors>
+      <attributes>
+        <text id="name">Background</text>
+        <boolean id="scrollable">true</boolean>
+      </attributes>
+    </layer>
+    <layer id="id536422">
+      <actors>
+        <actor id="id424255" prototype="id660038">
+          <attributes>
+            <point id="position">
+              <real id="x">30</real>
+              <real id="y">40</real>
+            </point>
+            <size id="size">
+              <real id="width">60</real>
+              <real id="height">60</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <image id="image">lvl1_square1_right</image>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
         <actor id="id645565" prototype="id660038">
           <attributes>
             <point id="position">
@@ -15,29 +68,7 @@
             </size>
             <angle id="rotation">0</angle>
             <image id="image">lvl1_square1_right</image>
-            <text id="name">lvl1_square1_right Copy 1</text>
-          </attributes>
-          <aspects>
-            <graphics>
-              <attributes />
-            </graphics>
-            <motion />
-            <physics>
-              <attributes />
-            </physics>
-          </aspects>
-        </actor>
-        <actor id="id879087" prototype="id260265">
-          <attributes>
-            <point id="position">
-              <real id="x">284</real>
-              <real id="y">160</real>
-            </point>
-            <size id="size">
-              <real id="width">568</real>
-              <real id="height">320</real>
-            </size>
-            <angle id="rotation">0</angle>
+            <text id="name">lvl1_square2_right</text>
           </attributes>
           <aspects>
             <graphics>
@@ -93,18 +124,26 @@
             </physics>
           </aspects>
         </actor>
-        <actor id="id424255" prototype="id660038">
+      </actors>
+      <attributes>
+        <text id="name">platforms</text>
+        <boolean id="scrollable">true</boolean>
+      </attributes>
+    </layer>
+    <layer id="id693310">
+      <actors>
+        <actor id="id822442" prototype="id929814">
           <attributes>
             <point id="position">
-              <real id="x">30</real>
-              <real id="y">40</real>
+              <real id="x">420.4</real>
+              <real id="y">283.8</real>
             </point>
             <size id="size">
-              <real id="width">60</real>
-              <real id="height">60</real>
+              <real id="width">33</real>
+              <real id="height">42</real>
             </size>
             <angle id="rotation">0</angle>
-            <image id="image">lvl1_square1_right</image>
+            <image id="image">lvl1_herb2</image>
           </attributes>
           <aspects>
             <graphics>
@@ -116,14 +155,6 @@
             </physics>
           </aspects>
         </actor>
-      </actors>
-      <attributes>
-        <text id="name">Background</text>
-        <boolean id="scrollable">false</boolean>
-      </attributes>
-    </layer>
-    <layer id="id693310">
-      <actors>
         <actor id="id689668" prototype="id663216">
           <attributes>
             <point id="position">
