@@ -35,6 +35,9 @@
     <image name="lvl1_herb2">
       <file name="lvl1_herb2.png" size="7108" />
     </image>
+    <image name="NewGameTitle">
+      <file name="NewGameTitle.png" size="272280" />
+    </image>
   </images>
   <behaviors />
 </assets>
