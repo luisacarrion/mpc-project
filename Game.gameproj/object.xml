@@ -7,7 +7,14 @@
       <real id="width">568</real>
       <real id="height">320</real>
     </size>
-    <text id="actorTags" />
+    <text id="actorTags">All	Walls</text>
+    <real id="id107654" name="wizard_body_y">0.0</real>
+    <real id="id378006" name="wizard_body_x">0.0</real>
+    <real id="id341233" name="y_difference">0.0</real>
+    <real id="id937962" name="x_difference">0.0</real>
+    <real id="id429646" name="touch_x">0.0</real>
+    <real id="id310436" name="touch_y">0.0</real>
+    <boolean id="id823767" name="touching">false</boolean>
   </attributes>
   <tags />
   <resolutionIndependence>1</resolutionIndependence>
@@ -24,6 +31,8 @@
     <actor id="id660038" />
     <actor id="id929814" />
     <actor id="id494714" />
+    <actor id="id795914" />
+    <actor id="id497335" />
   </prototypes>
   <plugins>
     <attributes id="playhaven" />

@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor id="id497335" PGFVersion="0.19" GSCVersion="0.10.4">
+  <attributes>
+    <text id="name">Wizard_body</text>
+    <real id="time">0</real>
+    <point id="position">
+      <real id="x">0</real>
+      <real id="y">0</real>
+    </point>
+    <size id="size">
+      <real id="width">120</real>
+      <real id="height">60</real>
+    </size>
+    <angle id="rotation">0</angle>
+    <color id="color">
+      <real id="red">1</real>
+      <real id="green">1</real>
+      <real id="blue">1</real>
+      <real id="alpha">1</real>
+    </color>
+    <image id="image" />
+    <text id="tags" />
+    <boolean id="preloadArt">true</boolean>
+  </attributes>
+  <behaviors>
+    <behavior enabled="true" class="RuleBehavior" id="id157787">
+      <attributes>
+        <text id="name">Rule</text>
+        <text id="bundleName">Rule.behavior</text>
+        <real id="compoundConditionKind">0</real>
+      </attributes>
+      <conditions>
+        <condition id="id120116" eventType="touch" pluginPredicateTypeIndex="0" class="Touch">
+          <predicate type="touch" conditionType="outside">
+            <attributes />
+          </predicate>
+          <attributes>
+            <text id="name">default name</text>
+            <index id="conditionType">0</index>
+          </attributes>
+        </condition>
+      </conditions>
+      <behaviors>
+        <behavior enabled="true" class="ConstrainAttributeBehavior" id="id896066">
+          <attributes>
+            <text id="name">Constrain Attribute</text>
+            <text id="bundleName">ConstrainAttribute.behavior</text>
+            <text id="targetAttribute">game.attributes.id429646</text>
+            <text id="RHS">
+              <expression>
+                <reference keypath="game.devices.touches.touch1.x" />
+              </expression>
+            </text>
+          </attributes>
+        </behavior>
+        <behavior enabled="true" class="ConstrainAttributeBehavior" id="id446298">
+          <attributes>
+            <text id="name">Constrain Attribute</text>
+            <text id="bundleName">ConstrainAttribute.behavior</text>
+            <text id="targetAttribute">game.attributes.id310436</text>
+            <text id="RHS">
+              <expression>
+                <reference keypath="game.devices.touches.touch1.y" />
+              </expression>
+            </text>
+          </attributes>
+        </behavior>
+        <behavior enabled="true" class="ConstrainAttributeBehavior" id="id148094">
+          <attributes>
+            <text id="name">Constrain Attribute</text>
+            <text id="bundleName">ConstrainAttribute.behavior</text>
+            <text id="targetAttribute">game.attributes.id823767</text>
+            <text id="RHS">true</text>
+          </attributes>
+        </behavior>
+      </behaviors>
+      <elseBehaviors>
+        <behavior enabled="true" class="ConstrainAttributeBehavior" id="id608312">
+          <attributes>
+            <text id="name">Constrain Attribute</text>
+            <text id="bundleName">ConstrainAttribute.behavior</text>
+            <text id="targetAttribute">game.attributes.id823767</text>
+            <text id="RHS">false</text>
+          </attributes>
+        </behavior>
+      </elseBehaviors>
+    </behavior>
+    <behavior enabled="true" class="RuleBehavior" id="id792165">
+      <attributes>
+        <text id="name">Rule</text>
+        <text id="bundleName">Rule.behavior</text>
+        <real id="compoundConditionKind">0</real>
+      </attributes>
+      <conditions>
+        <condition id="id453430" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+          <predicate type="boolean">
+            <attributes>
+              <index id="RHS">0</index>
+            </attributes>
+          </predicate>
+          <attributes>
+            <index id="conditionType">1</index>
+            <text id="subjectAttribute">game.attributes.id823767</text>
+            <text id="name">default name</text>
+          </attributes>
+        </condition>
+      </conditions>
+      <behaviors>
+        <behavior enabled="true" class="ChangeAttributeAction" id="id972835">
+          <attributes>
+            <text id="name">Calculate y_difference</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">game.attributes.id341233</text>
+            <text id="RHS">
+              <expression>
+                <string>abs(</string>
+                <reference keypath="game.attributes.id310436" />
+                <string>-</string>
+                <reference keypath="self.attributes.position.y" />
+                <string>)</string>
+              </expression>
+            </text>
+          </attributes>
+        </behavior>
+        <behavior enabled="true" class="ChangeAttributeAction" id="id720469">
+          <attributes>
+            <text id="name">Calculate x_difference</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">game.attributes.id937962</text>
+            <text id="RHS">
+              <expression>
+                <string>abs(</string>
+                <reference keypath="game.attributes.id429646" />
+                <string>-</string>
+                <reference keypath="self.attributes.position.x" />
+                <string>)</string>
+              </expression>
+            </text>
+          </attributes>
+        </behavior>
+      </behaviors>
+    </behavior>
+    <behavior enabled="true" class="RuleBehavior" id="id184628">
+      <attributes>
+        <text id="name">Rule</text>
+        <text id="bundleName">Rule.behavior</text>
+        <real id="compoundConditionKind">1</real>
+      </attributes>
+      <conditions>
+        <condition id="id172371" eventType="mouse button" pluginPredicateTypeIndex="0" class="MouseButton">
+          <predicate type="mouse" mouseState="up">
+            <attributes />
+          </predicate>
+          <attributes>
+            <text id="name">default name</text>
+            <index id="conditionType">0</index>
+          </attributes>
+        </condition>
+        <condition id="id239738" eventType="touch" pluginPredicateTypeIndex="0" class="Touch">
+          <predicate type="touch" conditionType="released">
+            <attributes />
+          </predicate>
+          <attributes>
+            <text id="name">default name</text>
+            <index id="conditionType">0</index>
+          </attributes>
+        </condition>
+      </conditions>
+      <behaviors>
+        <behavior enabled="true" class="MoveToBehavior" id="id804678">
+          <attributes>
+            <text id="name">Move To</text>
+            <text id="bundleName">MoveTo.behavior</text>
+            <boolean id="runToCompletion">true</boolean>
+            <point id="position">
+              <real id="x">
+                <expression>
+                  <reference keypath="self.attributes.position.x" />
+                </expression>
+              </real>
+              <real id="y">
+                <expression>
+                  <reference keypath="game.attributes.id310436" />
+                </expression>
+              </real>
+            </point>
+            <index id="space">1</index>
+            <real id="speed">150</real>
+          </attributes>
+        </behavior>
+        <behavior enabled="true" class="MoveToBehavior" id="id177947">
+          <attributes>
+            <text id="name">Move To</text>
+            <text id="bundleName">MoveTo.behavior</text>
+            <boolean id="runToCompletion">true</boolean>
+            <point id="position">
+              <real id="x">
+                <expression>
+                  <reference keypath="game.attributes.id429646" />
+                </expression>
+              </real>
+              <real id="y">
+                <expression>
+                  <reference keypath="self.attributes.position.y" />
+                </expression>
+              </real>
+            </point>
+            <index id="space">1</index>
+            <real id="speed">150</real>
+          </attributes>
+        </behavior>
+        <behavior enabled="false" class="RuleBehavior" id="id535486">
+          <attributes>
+            <text id="name">Decide vertical or horizontal movement</text>
+            <text id="bundleName">Rule.behavior</text>
+            <real id="compoundConditionKind">0</real>
+          </attributes>
+          <conditions>
+            <condition id="id154654" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+              <predicate type="number">
+                <attributes>
+                  <text id="operator">&gt;</text>
+                  <real id="RHS">
+                    <expression>
+                      <reference keypath="game.attributes.id937962" />
+                    </expression>
+                  </real>
+                </attributes>
+              </predicate>
+              <attributes>
+                <index id="conditionType">1</index>
+                <text id="subjectAttribute">game.attributes.id341233</text>
+                <text id="name">default name</text>
+              </attributes>
+            </condition>
+          </conditions>
+          <behaviors>
+            <behavior enabled="true" class="MoveToBehavior" id="id739849">
+              <attributes>
+                <text id="name">Move To</text>
+                <text id="bundleName">MoveTo.behavior</text>
+                <boolean id="runToCompletion">true</boolean>
+                <point id="position">
+                  <real id="x">
+                    <expression>
+                      <reference keypath="self.attributes.position.x" />
+                    </expression>
+                  </real>
+                  <real id="y">
+                    <expression>
+                      <reference keypath="game.attributes.id310436" />
+                    </expression>
+                  </real>
+                </point>
+                <index id="space">1</index>
+                <real id="speed">150</real>
+              </attributes>
+            </behavior>
+            <behavior enabled="true" class="MoveToBehavior" id="id689885">
+              <attributes>
+                <text id="name">Move To</text>
+                <text id="bundleName">MoveTo.behavior</text>
+                <boolean id="runToCompletion">true</boolean>
+                <point id="position">
+                  <real id="x">
+                    <expression>
+                      <reference keypath="game.attributes.id429646" />
+                    </expression>
+                  </real>
+                  <real id="y">
+                    <expression>
+                      <reference keypath="self.attributes.position.y" />
+                    </expression>
+                  </real>
+                </point>
+                <index id="space">1</index>
+                <real id="speed">150</real>
+              </attributes>
+            </behavior>
+          </behaviors>
+          <elseBehaviors>
+            <behavior enabled="true" class="MoveToBehavior" id="id754342">
+              <attributes>
+                <text id="name">Move To</text>
+                <text id="bundleName">MoveTo.behavior</text>
+                <boolean id="runToCompletion">true</boolean>
+                <point id="position">
+                  <real id="x">
+                    <expression>
+                      <reference keypath="game.attributes.id429646" />
+                    </expression>
+                  </real>
+                  <real id="y">
+                    <expression>
+                      <reference keypath="self.attributes.position.y" />
+                    </expression>
+                  </real>
+                </point>
+                <index id="space">1</index>
+                <real id="speed">150</real>
+              </attributes>
+            </behavior>
+            <behavior enabled="true" class="MoveToBehavior" id="id667253">
+              <attributes>
+                <text id="name">Move To</text>
+                <text id="bundleName">MoveTo.behavior</text>
+                <boolean id="runToCompletion">true</boolean>
+                <point id="position">
+                  <real id="x">
+                    <expression>
+                      <reference keypath="self.attributes.position.y" />
+                    </expression>
+                  </real>
+                  <real id="y">
+                    <expression>
+                      <reference keypath="game.devices.touches.touch1.y" />
+                    </expression>
+                  </real>
+                </point>
+                <index id="space">1</index>
+                <real id="speed">150</real>
+              </attributes>
+            </behavior>
+          </elseBehaviors>
+        </behavior>
+      </behaviors>
+    </behavior>
+    <behavior enabled="true" class="CollideBehavior" id="id193239">
+      <attributes>
+        <text id="name">Collide</text>
+        <text id="bundleName">Collide.behavior</text>
+        <text id="prototypeKey">id335757</text>
+        <text id="actorTag">Walls</text>
+        <index id="mode">1</index>
+      </attributes>
+    </behavior>
+    <behavior enabled="true" class="ConstrainAttributeBehavior" id="id671382">
+      <attributes>
+        <text id="name">Constrain Attribute</text>
+        <text id="bundleName">ConstrainAttribute.behavior</text>
+        <text id="targetAttribute">game.attributes.id378006</text>
+        <text id="RHS">
+          <expression>
+            <reference keypath="self.attributes.position.x" />
+          </expression>
+        </text>
+      </attributes>
+    </behavior>
+    <behavior enabled="true" class="ConstrainAttributeBehavior" id="id878260">
+      <attributes>
+        <text id="name">Constrain Attribute</text>
+        <text id="bundleName">ConstrainAttribute.behavior</text>
+        <text id="targetAttribute">game.attributes.id107654</text>
+        <text id="RHS">
+          <expression>
+            <reference keypath="self.attributes.position.y" />
+          </expression>
+        </text>
+      </attributes>
+    </behavior>
+  </behaviors>
+  <aspects>
+    <graphics>
+      <attributes>
+        <boolean id="visible">true</boolean>
+        <enumeration id="blendingMode">0</enumeration>
+        <enumeration id="horizontalWrap">0</enumeration>
+        <enumeration id="verticalWrap">0</enumeration>
+        <enumeration id="horizontalAnchor">0</enumeration>
+        <enumeration id="verticalAnchor">0</enumeration>
+        <boolean id="flipHorizontally">false</boolean>
+        <boolean id="flipVertically">false</boolean>
+        <integer id="tileWidth">0</integer>
+        <integer id="tileHeight">0</integer>
+      </attributes>
+    </graphics>
+    <motion>
+      <attributes>
+        <point id="linearVelocity">
+          <real id="x">0</real>
+          <real id="y">0</real>
+        </point>
+        <real id="angularVelocity">0</real>
+        <real id="maxSpeed">0</real>
+        <boolean id="applyMaxSpeed">false</boolean>
+      </attributes>
+    </motion>
+    <physics>
+      <attributes>
+        <real id="density">1</real>
+        <real id="friction">3</real>
+        <real id="restitution">0</real>
+        <boolean id="fixedRotation">true</boolean>
+        <boolean id="movable">true</boolean>
+        <enumeration id="collisionShape">0</enumeration>
+        <real id="drag">0</real>
+        <real id="angularDrag">0</real>
+      </attributes>
+    </physics>
+  </aspects>
+</actor>

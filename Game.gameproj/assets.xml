@@ -38,6 +38,21 @@
     <image name="NewGameTitle">
       <file name="NewGameTitle.png" size="272280" />
     </image>
+    <image name="wizard_right1">
+      <file name="wizard_right1.png" size="17453" />
+    </image>
+    <image name="wizard_right2">
+      <file name="wizard_right2.png" size="17311" />
+    </image>
+    <image name="wizard_right3">
+      <file name="wizard_right3.png" size="17453" />
+    </image>
+    <image name="wizard_right4">
+      <file name="wizard_right4.png" size="17332" />
+    </image>
+    <image name="walls">
+      <file name="walls.png" size="4701" />
+    </image>
   </images>
   <behaviors />
 </assets>
