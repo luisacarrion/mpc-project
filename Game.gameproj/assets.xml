@@ -53,6 +53,18 @@
     <image name="walls">
       <file name="walls.png" size="4701" />
     </image>
+    <image name="wizard_left1">
+      <file name="wizard_left1.png" size="17552" />
+    </image>
+    <image name="wizard_left2">
+      <file name="wizard_left2.png" size="17351" />
+    </image>
+    <image name="wizard_left3">
+      <file name="wizard_left3.png" size="17552" />
+    </image>
+    <image name="wizard_left4">
+      <file name="wizard_left4.png" size="17414" />
+    </image>
   </images>
   <behaviors />
 </assets>
