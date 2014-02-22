@@ -514,7 +514,7 @@
             </size>
             <angle id="rotation">0</angle>
             <image id="image">lvl1_square1_right</image>
-            <boolean id="id187508" name="points_right">true</boolean>
+            <boolean id="preloadArt">true</boolean>
           </attributes>
           <behaviors>
             <behavior id="id114985" class="ConstrainAttributeBehavior" enabled="true">
@@ -609,7 +609,7 @@
                   <attributes>
                     <text id="name">Change Attribute</text>
                     <text id="bundleName">ChangeAttribute.behavior</text>
-                    <text id="targetAttribute">self.attributes.id187508</text>
+                    <text id="targetAttribute">scene.attributes.id572829</text>
                     <text id="RHS">true</text>
                   </attributes>
                 </behavior>
@@ -619,6 +619,14 @@
                     <text id="bundleName">ChangeAttribute.behavior</text>
                     <text id="targetAttribute">self.aspects.graphics.attributes.flipHorizontally</text>
                     <text id="RHS">false</text>
+                  </attributes>
+                </behavior>
+                <behavior id="id380952" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Set block moved as true</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">scene.attributes.id692918</text>
+                    <text id="RHS">true</text>
                   </attributes>
                 </behavior>
               </behaviors>
@@ -649,7 +657,7 @@
                   <attributes>
                     <text id="name">Change Attribute</text>
                     <text id="bundleName">ChangeAttribute.behavior</text>
-                    <text id="targetAttribute">self.attributes.id187508</text>
+                    <text id="targetAttribute">scene.attributes.id572829</text>
                     <text id="RHS">false</text>
                   </attributes>
                 </behavior>
@@ -658,6 +666,14 @@
                     <text id="name">Change Attribute</text>
                     <text id="bundleName">ChangeAttribute.behavior</text>
                     <text id="targetAttribute">self.aspects.graphics.attributes.flipHorizontally</text>
+                    <text id="RHS">true</text>
+                  </attributes>
+                </behavior>
+                <behavior id="id303702" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Set block_moved as true</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">scene.attributes.id692918</text>
                     <text id="RHS">true</text>
                   </attributes>
                 </behavior>
@@ -695,7 +711,7 @@
                     <condition id="id269024" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
                       <attributes>
                         <index id="conditionType">1</index>
-                        <text id="subjectAttribute">self.attributes.id187508</text>
+                        <text id="subjectAttribute">scene.attributes.id572829</text>
                         <text id="name">default name</text>
                       </attributes>
                       <predicate type="boolean">
@@ -714,6 +730,18 @@
                         <attributes>
                           <text id="operator">&lt;</text>
                           <real id="RHS">120</real>
+                        </attributes>
+                      </predicate>
+                    </condition>
+                    <condition id="id661565" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                      <attributes>
+                        <index id="conditionType">1</index>
+                        <text id="subjectAttribute">scene.attributes.id692918</text>
+                        <text id="name">default name</text>
+                      </attributes>
+                      <predicate type="boolean">
+                        <attributes>
+                          <index id="RHS">0</index>
                         </attributes>
                       </predicate>
                     </condition>
@@ -748,7 +776,7 @@
                         <condition id="id731163" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
                           <attributes>
                             <index id="conditionType">1</index>
-                            <text id="subjectAttribute">self.attributes.id187508</text>
+                            <text id="subjectAttribute">scene.attributes.id572829</text>
                             <text id="name">default name</text>
                           </attributes>
                           <predicate type="boolean">
@@ -767,6 +795,18 @@
                             <attributes>
                               <text id="operator">&gt;</text>
                               <real id="RHS">30</real>
+                            </attributes>
+                          </predicate>
+                        </condition>
+                        <condition id="id322654" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                          <attributes>
+                            <index id="conditionType">1</index>
+                            <text id="subjectAttribute">scene.attributes.id692918</text>
+                            <text id="name">default name</text>
+                          </attributes>
+                          <predicate type="boolean">
+                            <attributes>
+                              <index id="RHS">0</index>
                             </attributes>
                           </predicate>
                         </condition>
@@ -794,6 +834,16 @@
                   </elseBehaviors>
                 </behavior>
               </behaviors>
+              <elseBehaviors>
+                <behavior id="id376673" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Set block moved as false</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">scene.attributes.id692918</text>
+                    <text id="RHS">false</text>
+                  </attributes>
+                </behavior>
+              </elseBehaviors>
             </behavior>
           </behaviors>
           <aspects>
@@ -1476,5 +1526,7 @@
     <integer id="id592438" name="level_timer">60</integer>
     <real id="id835103" name="block1_x">0.0</real>
     <real id="id876024" name="block1_y">0.0</real>
+    <boolean id="id572829" name="block_points_right">true</boolean>
+    <boolean id="id692918" name="block_moved">false</boolean>
   </attributes>
 </scene>
