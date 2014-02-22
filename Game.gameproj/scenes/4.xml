@@ -912,18 +912,18 @@
         <actor id="id633054" prototype="id298285">
           <attributes>
             <point id="position">
-              <real id="x">204.3125</real>
+              <real id="x">210</real>
               <real id="y">159.412109375</real>
             </point>
             <size id="size">
-              <real id="width">59.3515625</real>
-              <real id="height">58.23828125</real>
+              <real id="width">60</real>
+              <real id="height">60</real>
             </size>
           </attributes>
           <behaviors>
-            <behavior id="id161793" class="RuleBehavior" enabled="true">
+            <behavior id="id161793" class="RuleBehavior" enabled="false">
               <attributes>
-                <text id="name">Move block when twin moves</text>
+                <text id="name">Move block when twin moves original</text>
                 <text id="bundleName">Rule.behavior</text>
                 <real id="compoundConditionKind">0</real>
               </attributes>
@@ -953,24 +953,6 @@
                     </text>
                   </attributes>
                 </behavior>
-                <behavior id="id573960" class="LogDebuggingStatementAction" enabled="true">
-                  <attributes>
-                    <text id="name">Log Debugging Statement</text>
-                    <text id="bundleName">LogDebuggingStatement.behavior</text>
-                    <text id="text">play_block2_x should now be constrained to block1_x</text>
-                  </attributes>
-                </behavior>
-                <behavior id="id946999" class="LogDebuggingStatementAction" enabled="true">
-                  <attributes>
-                    <text id="name">Log Debugging Statement</text>
-                    <text id="bundleName">LogDebuggingStatement.behavior</text>
-                    <text id="text">
-                      <expression>
-                        <reference keypath="game.attributes.id972722" />
-                      </expression>
-                    </text>
-                  </attributes>
-                </behavior>
                 <behavior id="id552855" class="MoveToBehavior" enabled="true">
                   <attributes>
                     <text id="name">Move To</text>
@@ -991,6 +973,68 @@
                 </behavior>
               </behaviors>
               <elseBehaviors />
+            </behavior>
+            <behavior id="id321807" class="CompoundBehavior" enabled="true">
+              <attributes>
+                <text id="name">Move block when twin moves</text>
+                <text id="bundleName">Group.behavior</text>
+              </attributes>
+              <behaviors>
+                <behavior id="id624259" class="ConstrainAttributeBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Constrain Attribute</text>
+                    <text id="bundleName">ConstrainAttribute.behavior</text>
+                    <text id="targetAttribute">self.attributes.position.x</text>
+                    <text id="RHS">
+                      <expression>
+                        <reference keypath="scene.attributes.id835103" />
+                        <string>+180</string>
+                      </expression>
+                    </text>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+            <behavior id="id621514" class="RuleBehavior" enabled="true">
+              <attributes>
+                <text id="name">Flip image</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id718662" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">scene.attributes.id572829</text>
+                    <text id="name">default name</text>
+                  </attributes>
+                  <predicate type="boolean">
+                    <attributes>
+                      <index id="RHS">1</index>
+                    </attributes>
+                  </predicate>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior id="id363245" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Attribute</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">self.aspects.graphics.attributes.flipHorizontally</text>
+                    <text id="RHS">false</text>
+                  </attributes>
+                </behavior>
+              </behaviors>
+              <elseBehaviors>
+                <behavior id="id539410" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Attribute</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">self.aspects.graphics.attributes.flipHorizontally</text>
+                    <text id="RHS">true</text>
+                  </attributes>
+                </behavior>
+              </elseBehaviors>
             </behavior>
           </behaviors>
           <aspects>
@@ -1376,6 +1420,163 @@
     </layer>
     <layer id="id860023">
       <actors>
+        <actor id="id949497" prototype="id795914">
+          <attributes>
+            <point id="position">
+              <real id="x">255</real>
+              <real id="y">160</real>
+            </point>
+            <size id="size">
+              <real id="width">30</real>
+              <real id="height">60</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <text id="name">block2_right_wall</text>
+          </attributes>
+          <behaviors>
+            <behavior id="id504248" class="CompoundBehavior" enabled="true">
+              <attributes>
+                <text id="name">Move wall when block moves</text>
+                <text id="bundleName">Group.behavior</text>
+              </attributes>
+              <behaviors>
+                <behavior id="id136139" class="ConstrainAttributeBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Constrain Attribute</text>
+                    <text id="bundleName">ConstrainAttribute.behavior</text>
+                    <text id="targetAttribute">self.attributes.position.x</text>
+                    <text id="RHS">
+                      <expression>
+                        <reference keypath="scene.attributes.id835103" />
+                        <string>+225</string>
+                      </expression>
+                    </text>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+            <behavior id="id199219" class="RuleBehavior" enabled="false">
+              <attributes>
+                <text id="name">Change size rule</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id822982" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">scene.attributes.id572829</text>
+                    <text id="name">default name</text>
+                  </attributes>
+                  <predicate type="boolean">
+                    <attributes>
+                      <index id="RHS">1</index>
+                    </attributes>
+                  </predicate>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior id="id491237" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Attribute</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">self.attributes.size.width</text>
+                    <text id="RHS">90</text>
+                  </attributes>
+                </behavior>
+                <behavior id="id720424" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Attribute</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">self.attributes.position.x</text>
+                    <text id="RHS">285</text>
+                  </attributes>
+                </behavior>
+              </behaviors>
+              <elseBehaviors>
+                <behavior id="id706274" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Attribute</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">self.attributes.size.width</text>
+                    <text id="RHS">30</text>
+                  </attributes>
+                </behavior>
+                <behavior id="id792689" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Attribute</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">self.attributes.position.x</text>
+                    <text id="RHS">300</text>
+                  </attributes>
+                </behavior>
+              </elseBehaviors>
+            </behavior>
+          </behaviors>
+          <aspects>
+            <graphics>
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+                <boolean id="visible">true</boolean>
+              </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id144396" prototype="id795914">
+          <attributes>
+            <point id="position">
+              <real id="x">166</real>
+              <real id="y">158.6</real>
+            </point>
+            <size id="size">
+              <real id="width">30</real>
+              <real id="height">64</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <text id="name">block2_left_wall</text>
+          </attributes>
+          <behaviors>
+            <behavior id="id325906" class="CompoundBehavior" enabled="true">
+              <attributes>
+                <text id="name">Move in x with block1</text>
+                <text id="bundleName">Group.behavior</text>
+              </attributes>
+              <behaviors>
+                <behavior id="id930241" class="ConstrainAttributeBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Constrain Attribute</text>
+                    <text id="bundleName">ConstrainAttribute.behavior</text>
+                    <text id="targetAttribute">self.attributes.position.x</text>
+                    <text id="RHS">
+                      <expression>
+                        <reference keypath="scene.attributes.id835103" />
+                        <string>+136</string>
+                      </expression>
+                    </text>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+          </behaviors>
+          <aspects>
+            <graphics>
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+                <boolean id="visible">true</boolean>
+              </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
         <actor id="id309174" prototype="id795914">
           <attributes>
             <point id="position">
