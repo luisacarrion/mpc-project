@@ -25,8 +25,8 @@
     <real id="id972722" name="play_block2_x">0</real>
     <real id="id640959" name="play_block2_y">0</real>
     <boolean id="id280027" name="play_block_has_moved">false</boolean>
-    <real id="id749353" name="wizard_body_diff_x">0.0</real>
-    <real id="id401116" name="wizard_dody_diff_y">0.0</real>
+    <real id="id749353" name="wizard_body_diff_x">0</real>
+    <real id="id401116" name="wizard_dody_diff_y">0</real>
   </attributes>
   <tags />
   <resolutionIndependence>1</resolutionIndependence>
