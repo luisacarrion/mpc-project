@@ -422,12 +422,12 @@
         <actor id="id516536" prototype="id795914">
           <attributes>
             <point id="position">
-              <real id="x">104</real>
-              <real id="y">38.6</real>
+              <real id="x">105</real>
+              <real id="y">40</real>
             </point>
             <size id="size">
-              <real id="width">89.6</real>
-              <real id="height">64</real>
+              <real id="width">90</real>
+              <real id="height">60</real>
             </size>
             <angle id="rotation">0</angle>
             <text id="name">block1_right_wall</text>
@@ -447,7 +447,7 @@
                     <text id="RHS">
                       <expression>
                         <reference keypath="scene.attributes.id835103" />
-                        <string>+74</string>
+                        <string>+75</string>
                       </expression>
                     </text>
                   </attributes>
@@ -528,60 +528,6 @@
                   </expression>
                 </text>
               </attributes>
-            </behavior>
-            <behavior id="id666968" class="RuleBehavior" enabled="false">
-              <attributes>
-                <text id="name">Block moves right when wizard steps on it</text>
-                <text id="bundleName">Rule.behavior</text>
-                <real id="compoundConditionKind">0</real>
-              </attributes>
-              <conditions>
-                <condition id="id702782" eventType="overlaps or collides" pluginPredicateTypeIndex="0">
-                  <attributes>
-                    <index id="conditionType">0</index>
-                  </attributes>
-                  <predicate type="collision">
-                    <attributes>
-                      <text id="prototypeKey">id497335</text>
-                      <text id="actorTag">All</text>
-                      <real id="mode">0</real>
-                    </attributes>
-                  </predicate>
-                </condition>
-              </conditions>
-              <behaviors>
-                <behavior id="id992999" class="ChangeAttributeAction" enabled="true">
-                  <attributes>
-                    <text id="name">Change Attribute</text>
-                    <text id="bundleName">ChangeAttribute.behavior</text>
-                    <text id="targetAttribute">game.attributes.id280027</text>
-                    <text id="RHS">true</text>
-                  </attributes>
-                </behavior>
-                <behavior id="id384730" class="MoveToBehavior" enabled="true">
-                  <attributes>
-                    <text id="name">Move To</text>
-                    <text id="bundleName">MoveTo.behavior</text>
-                    <boolean id="runToCompletion">false</boolean>
-                    <point id="position">
-                      <real id="x">
-                        <expression>
-                          <reference keypath="self.attributes.position.x" />
-                          <string>+90</string>
-                        </expression>
-                      </real>
-                      <real id="y">
-                        <expression>
-                          <reference keypath="self.attributes.position.y" />
-                        </expression>
-                      </real>
-                    </point>
-                    <index id="space">1</index>
-                    <real id="speed">150</real>
-                  </attributes>
-                </behavior>
-              </behaviors>
-              <elseBehaviors />
             </behavior>
             <behavior id="id404634" class="RuleBehavior" enabled="true">
               <attributes>
@@ -871,6 +817,61 @@
             </size>
             <angle id="rotation">0</angle>
           </attributes>
+          <behaviors>
+            <behavior id="id422126" class="ConstrainAttributeBehavior" enabled="true">
+              <attributes>
+                <text id="name">Constrain Attribute</text>
+                <text id="bundleName">ConstrainAttribute.behavior</text>
+                <text id="targetAttribute">self.attributes.rotation</text>
+                <text id="RHS">
+                  <expression>
+                    <reference keypath="scene.attributes.id170055" />
+                  </expression>
+                </text>
+              </attributes>
+            </behavior>
+            <behavior id="id765141" class="RuleBehavior" enabled="true">
+              <attributes>
+                <text id="name">Flip image rule</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id923682" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">scene.attributes.id284252</text>
+                    <text id="name">default name</text>
+                  </attributes>
+                  <predicate type="boolean">
+                    <attributes>
+                      <index id="RHS">1</index>
+                    </attributes>
+                  </predicate>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior id="id708452" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Attribute</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">self.aspects.graphics.attributes.flipHorizontally</text>
+                    <text id="RHS">false</text>
+                  </attributes>
+                </behavior>
+              </behaviors>
+              <elseBehaviors>
+                <behavior id="id726393" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Attribute</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">self.aspects.graphics.attributes.flipHorizontally</text>
+                    <text id="RHS">true</text>
+                  </attributes>
+                </behavior>
+              </elseBehaviors>
+            </behavior>
+          </behaviors>
           <aspects>
             <graphics>
               <attributes>
@@ -1043,6 +1044,276 @@
                 <integer id="tileWidth" name="tileWidth">0</integer>
                 <integer id="tileHeight" name="tileHeight">0</integer>
               </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id757235" prototype="id508070">
+          <attributes>
+            <point id="position">
+              <real id="x">74</real>
+              <real id="y">250</real>
+            </point>
+            <size id="size">
+              <real id="width">60</real>
+              <real id="height">60</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <behaviors>
+            <behavior id="id985556" class="ConstrainAttributeBehavior" enabled="true">
+              <attributes>
+                <text id="name">Update circle1 angle</text>
+                <text id="bundleName">ConstrainAttribute.behavior</text>
+                <text id="targetAttribute">scene.attributes.id170055</text>
+                <text id="RHS">
+                  <expression>
+                    <reference keypath="self.attributes.rotation" />
+                  </expression>
+                </text>
+              </attributes>
+            </behavior>
+            <behavior id="id612915" class="RuleBehavior" enabled="true">
+              <attributes>
+                <text id="name">Change direction to go clockwise rule</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id428424" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.rotation</text>
+                    <text id="name">default name</text>
+                  </attributes>
+                  <predicate type="number">
+                    <attributes>
+                      <text id="operator">=</text>
+                      <real id="RHS">0</real>
+                    </attributes>
+                  </predicate>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior id="id287535" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Attribute</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">scene.attributes.id284252</text>
+                    <text id="RHS">true</text>
+                  </attributes>
+                </behavior>
+                <behavior id="id874601" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Attribute</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">scene.attributes.id477881</text>
+                    <text id="RHS">true</text>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+            <behavior id="id810752" class="RuleBehavior" enabled="true">
+              <attributes>
+                <text id="name">Change direction to go counter clockwise rule</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id333962" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.rotation</text>
+                    <text id="name">default name</text>
+                  </attributes>
+                  <predicate type="number">
+                    <attributes>
+                      <text id="operator">=</text>
+                      <real id="RHS">270</real>
+                    </attributes>
+                  </predicate>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior id="id142634" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Attribute</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">scene.attributes.id284252</text>
+                    <text id="RHS">false</text>
+                  </attributes>
+                </behavior>
+                <behavior id="id949302" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Attribute</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">scene.attributes.id477881</text>
+                    <text id="RHS">true</text>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+            <behavior id="id865567" class="RuleBehavior" enabled="true">
+              <attributes>
+                <text id="name">Start platform rotation</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id715591" eventType="overlaps or collides" pluginPredicateTypeIndex="0" class="Collision">
+                  <attributes>
+                    <text id="name">default name</text>
+                    <index id="conditionType">0</index>
+                  </attributes>
+                  <predicate type="collision">
+                    <attributes>
+                      <text id="prototypeKey">id497335</text>
+                      <text id="actorTag" />
+                      <real id="mode">0</real>
+                    </attributes>
+                  </predicate>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior id="id918081" class="RuleBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Rotate clockwise rule</text>
+                    <text id="bundleName">Rule.behavior</text>
+                    <real id="compoundConditionKind">0</real>
+                  </attributes>
+                  <conditions>
+                    <condition id="id358615" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                      <attributes>
+                        <index id="conditionType">1</index>
+                        <text id="subjectAttribute">scene.attributes.id284252</text>
+                        <text id="name">default name</text>
+                      </attributes>
+                      <predicate type="boolean">
+                        <attributes>
+                          <index id="RHS">1</index>
+                        </attributes>
+                      </predicate>
+                    </condition>
+                    <condition id="id725889" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                      <attributes>
+                        <index id="conditionType">1</index>
+                        <text id="subjectAttribute">scene.attributes.id477881</text>
+                        <text id="name">default name</text>
+                      </attributes>
+                      <predicate type="boolean">
+                        <attributes>
+                          <index id="RHS">0</index>
+                        </attributes>
+                      </predicate>
+                    </condition>
+                    <condition id="id241090" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                      <attributes>
+                        <index id="conditionType">1</index>
+                        <text id="subjectAttribute">self.attributes.rotation</text>
+                        <text id="name">default name</text>
+                      </attributes>
+                      <predicate type="number">
+                        <attributes>
+                          <text id="operator">!=</text>
+                          <real id="RHS">270</real>
+                        </attributes>
+                      </predicate>
+                    </condition>
+                  </conditions>
+                  <behaviors>
+                    <behavior id="id279972" class="RotateToAngleBehavior" enabled="true">
+                      <attributes>
+                        <text id="name">Rotate clockwise</text>
+                        <text id="bundleName">RotateToAngle.behavior</text>
+                        <boolean id="runToCompletion">false</boolean>
+                        <angle id="angle">270</angle>
+                        <index id="space">1</index>
+                        <real id="angularVelocity">90</real>
+                        <boolean id="continuousMovement">false</boolean>
+                      </attributes>
+                    </behavior>
+                  </behaviors>
+                  <elseBehaviors>
+                    <behavior id="id260210" class="RuleBehavior" enabled="true">
+                      <attributes>
+                        <text id="name">Rotate counter clockwise rule</text>
+                        <text id="bundleName">Rule.behavior</text>
+                        <real id="compoundConditionKind">0</real>
+                      </attributes>
+                      <conditions>
+                        <condition id="id938440" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                          <attributes>
+                            <index id="conditionType">1</index>
+                            <text id="subjectAttribute">scene.attributes.id284252</text>
+                            <text id="name">default name</text>
+                          </attributes>
+                          <predicate type="boolean">
+                            <attributes>
+                              <index id="RHS">0</index>
+                            </attributes>
+                          </predicate>
+                        </condition>
+                        <condition id="id807490" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                          <attributes>
+                            <index id="conditionType">1</index>
+                            <text id="subjectAttribute">scene.attributes.id477881</text>
+                            <text id="name">default name</text>
+                          </attributes>
+                          <predicate type="boolean">
+                            <attributes>
+                              <index id="RHS">0</index>
+                            </attributes>
+                          </predicate>
+                        </condition>
+                        <condition id="id230093" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                          <attributes>
+                            <index id="conditionType">1</index>
+                            <text id="subjectAttribute">self.attributes.rotation</text>
+                            <text id="name">default name</text>
+                          </attributes>
+                          <predicate type="number">
+                            <attributes>
+                              <text id="operator">!=</text>
+                              <real id="RHS">0</real>
+                            </attributes>
+                          </predicate>
+                        </condition>
+                      </conditions>
+                      <behaviors>
+                        <behavior id="id216331" class="RotateToAngleBehavior" enabled="true">
+                          <attributes>
+                            <text id="name">Rotate counter clockwise</text>
+                            <text id="bundleName">RotateToAngle.behavior</text>
+                            <boolean id="runToCompletion">false</boolean>
+                            <angle id="angle">0</angle>
+                            <index id="space">1</index>
+                            <real id="angularVelocity">90</real>
+                            <boolean id="continuousMovement">false</boolean>
+                          </attributes>
+                        </behavior>
+                      </behaviors>
+                    </behavior>
+                  </elseBehaviors>
+                </behavior>
+              </behaviors>
+              <elseBehaviors>
+                <behavior id="id982683" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Set circle1_moved to false</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">scene.attributes.id477881</text>
+                    <text id="RHS">false</text>
+                  </attributes>
+                </behavior>
+              </elseBehaviors>
+            </behavior>
+          </behaviors>
+          <aspects>
+            <graphics>
+              <attributes />
             </graphics>
             <motion />
             <physics>
@@ -1814,5 +2085,8 @@
     <real id="id876024" name="block1_y">0</real>
     <boolean id="id572829" name="block_points_right">true</boolean>
     <boolean id="id692918" name="block_moved">false</boolean>
+    <boolean id="id284252" name="circle_goes_clockwise">true</boolean>
+    <real id="id170055" name="circle1_angle">0.0</real>
+    <boolean id="id477881" name="circle1_moved">false</boolean>
   </attributes>
 </scene>
