@@ -28,6 +28,168 @@
             </physics>
           </aspects>
         </actor>
+        <actor id="id102463" prototype="id795914">
+          <attributes>
+            <point id="position">
+              <real id="x">30</real>
+              <real id="y">250</real>
+            </point>
+            <size id="size">
+              <real id="width">30</real>
+              <real id="height">120</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <text id="name">circle1_right_wall Copy 1</text>
+          </attributes>
+          <behaviors>
+            <behavior id="id234887" class="CompoundBehavior" enabled="true">
+              <attributes>
+                <text id="name">Orbit clockwise</text>
+                <text id="bundleName">Group.behavior</text>
+              </attributes>
+              <behaviors>
+                <behavior id="id698871" class="ConstrainAttributeBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Constrain Attribute</text>
+                    <text id="bundleName">ConstrainAttribute.behavior</text>
+                    <text id="targetAttribute">self.attributes.position.x</text>
+                    <text id="RHS">
+                      <expression>
+                        <string>45*(-1)*cos(</string>
+                        <reference keypath="scene.attributes.id170055" />
+                        <string>)+75</string>
+                      </expression>
+                    </text>
+                  </attributes>
+                </behavior>
+                <behavior id="id768357" class="ConstrainAttributeBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Constrain Attribute</text>
+                    <text id="bundleName">ConstrainAttribute.behavior</text>
+                    <text id="targetAttribute">self.attributes.position.y</text>
+                    <text id="RHS">
+                      <expression>
+                        <string>45*(-1)*sin(</string>
+                        <reference keypath="scene.attributes.id170055" />
+                        <string>)+250</string>
+                      </expression>
+                    </text>
+                  </attributes>
+                </behavior>
+                <behavior id="id680846" class="ConstrainAttributeBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Constrain Attribute</text>
+                    <text id="bundleName">ConstrainAttribute.behavior</text>
+                    <text id="targetAttribute">self.attributes.rotation</text>
+                    <text id="RHS">
+                      <expression>
+                        <string>vectorToAngle(75-</string>
+                        <reference keypath="self.attributes.position.x" />
+                        <string>, 250-</string>
+                        <reference keypath="self.attributes.position.y" />
+                        <string>)</string>
+                      </expression>
+                    </text>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+          </behaviors>
+          <aspects>
+            <graphics>
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+                <boolean id="visible">true</boolean>
+              </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id522867" prototype="id795914">
+          <attributes>
+            <point id="position">
+              <real id="x">120</real>
+              <real id="y">250</real>
+            </point>
+            <size id="size">
+              <real id="width">30</real>
+              <real id="height">120</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <text id="name">circle1_right_wall</text>
+          </attributes>
+          <behaviors>
+            <behavior id="id305401" class="CompoundBehavior" enabled="true">
+              <attributes>
+                <text id="name">Orbit clockwise</text>
+                <text id="bundleName">Group.behavior</text>
+              </attributes>
+              <behaviors>
+                <behavior id="id360277" class="ConstrainAttributeBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Constrain Attribute</text>
+                    <text id="bundleName">ConstrainAttribute.behavior</text>
+                    <text id="targetAttribute">self.attributes.position.x</text>
+                    <text id="RHS">
+                      <expression>
+                        <string>45*cos(</string>
+                        <reference keypath="scene.attributes.id170055" />
+                        <string>)+75</string>
+                      </expression>
+                    </text>
+                  </attributes>
+                </behavior>
+                <behavior id="id146633" class="ConstrainAttributeBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Constrain Attribute</text>
+                    <text id="bundleName">ConstrainAttribute.behavior</text>
+                    <text id="targetAttribute">self.attributes.position.y</text>
+                    <text id="RHS">
+                      <expression>
+                        <string>45*sin(</string>
+                        <reference keypath="scene.attributes.id170055" />
+                        <string>)+250</string>
+                      </expression>
+                    </text>
+                  </attributes>
+                </behavior>
+                <behavior id="id716808" class="ConstrainAttributeBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Constrain Attribute</text>
+                    <text id="bundleName">ConstrainAttribute.behavior</text>
+                    <text id="targetAttribute">self.attributes.rotation</text>
+                    <text id="RHS">
+                      <expression>
+                        <string>vectorToAngle(75-</string>
+                        <reference keypath="self.attributes.position.x" />
+                        <string>, 250-</string>
+                        <reference keypath="self.attributes.position.y" />
+                        <string>)</string>
+                      </expression>
+                    </text>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+          </behaviors>
+          <aspects>
+            <graphics>
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+                <boolean id="visible">true</boolean>
+              </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
         <actor id="id930545" prototype="id795914">
           <attributes>
             <text id="name">Wall1 Copy 14</text>
@@ -808,7 +970,7 @@
         <actor id="id949744" prototype="id259563">
           <attributes>
             <point id="position">
-              <real id="x">74</real>
+              <real id="x">75</real>
               <real id="y">250</real>
             </point>
             <size id="size">
@@ -1054,7 +1216,7 @@
         <actor id="id757235" prototype="id508070">
           <attributes>
             <point id="position">
-              <real id="x">74</real>
+              <real id="x">75</real>
               <real id="y">250</real>
             </point>
             <size id="size">
