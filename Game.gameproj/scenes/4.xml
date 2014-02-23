@@ -100,7 +100,7 @@
               <attributes>
                 <integer id="tileWidth" name="tileWidth">0</integer>
                 <integer id="tileHeight" name="tileHeight">0</integer>
-                <boolean id="visible">true</boolean>
+                <boolean id="visible">false</boolean>
               </attributes>
             </graphics>
             <motion />
@@ -181,7 +181,7 @@
               <attributes>
                 <integer id="tileWidth" name="tileWidth">0</integer>
                 <integer id="tileHeight" name="tileHeight">0</integer>
-                <boolean id="visible">true</boolean>
+                <boolean id="visible">false</boolean>
               </attributes>
             </graphics>
             <motion />
@@ -262,7 +262,7 @@
               <attributes>
                 <integer id="tileWidth" name="tileWidth">0</integer>
                 <integer id="tileHeight" name="tileHeight">0</integer>
-                <boolean id="visible">true</boolean>
+                <boolean id="visible">false</boolean>
               </attributes>
             </graphics>
             <motion />
@@ -343,7 +343,7 @@
               <attributes>
                 <integer id="tileWidth" name="tileWidth">0</integer>
                 <integer id="tileHeight" name="tileHeight">0</integer>
-                <boolean id="visible">true</boolean>
+                <boolean id="visible">false</boolean>
               </attributes>
             </graphics>
             <motion />
@@ -424,7 +424,7 @@
               <attributes>
                 <integer id="tileWidth" name="tileWidth">0</integer>
                 <integer id="tileHeight" name="tileHeight">0</integer>
-                <boolean id="visible">true</boolean>
+                <boolean id="visible">false</boolean>
               </attributes>
             </graphics>
             <motion />
@@ -865,7 +865,7 @@
               <attributes>
                 <integer id="tileWidth" name="tileWidth">0</integer>
                 <integer id="tileHeight" name="tileHeight">0</integer>
-                <boolean id="visible">true</boolean>
+                <boolean id="visible">false</boolean>
               </attributes>
             </graphics>
             <motion />
@@ -1302,6 +1302,61 @@
             </size>
             <angle id="rotation">90</angle>
           </attributes>
+          <behaviors>
+            <behavior id="id778667" class="ConstrainAttributeBehavior" enabled="true">
+              <attributes>
+                <text id="name">Constrain Attribute</text>
+                <text id="bundleName">ConstrainAttribute.behavior</text>
+                <text id="targetAttribute">self.attributes.rotation</text>
+                <text id="RHS">
+                  <expression>
+                    <reference keypath="scene.attributes.id170055" />
+                  </expression>
+                </text>
+              </attributes>
+            </behavior>
+            <behavior id="id274297" class="RuleBehavior" enabled="true">
+              <attributes>
+                <text id="name">Flip image rule</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id877927" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">scene.attributes.id284252</text>
+                    <text id="name">default name</text>
+                  </attributes>
+                  <predicate type="boolean">
+                    <attributes>
+                      <index id="RHS">1</index>
+                    </attributes>
+                  </predicate>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior id="id353774" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Attribute</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">self.aspects.graphics.attributes.flipVertically</text>
+                    <text id="RHS">false</text>
+                  </attributes>
+                </behavior>
+              </behaviors>
+              <elseBehaviors>
+                <behavior id="id648249" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Attribute</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">self.aspects.graphics.attributes.flipVertically</text>
+                    <text id="RHS">true</text>
+                  </attributes>
+                </behavior>
+              </elseBehaviors>
+            </behavior>
+          </behaviors>
           <aspects>
             <graphics>
               <attributes>
@@ -1719,7 +1774,9 @@
           </behaviors>
           <aspects>
             <graphics>
-              <attributes />
+              <attributes>
+                <boolean id="visible">false</boolean>
+              </attributes>
             </graphics>
             <motion />
             <physics>
@@ -2173,7 +2230,7 @@
               <attributes>
                 <integer id="tileWidth" name="tileWidth">0</integer>
                 <integer id="tileHeight" name="tileHeight">0</integer>
-                <boolean id="visible">true</boolean>
+                <boolean id="visible">false</boolean>
               </attributes>
             </graphics>
             <motion />
@@ -2280,7 +2337,7 @@
               <attributes>
                 <integer id="tileWidth" name="tileWidth">0</integer>
                 <integer id="tileHeight" name="tileHeight">0</integer>
-                <boolean id="visible">true</boolean>
+                <boolean id="visible">false</boolean>
               </attributes>
             </graphics>
             <motion />
@@ -2330,7 +2387,7 @@
               <attributes>
                 <integer id="tileWidth" name="tileWidth">0</integer>
                 <integer id="tileHeight" name="tileHeight">0</integer>
-                <boolean id="visible">true</boolean>
+                <boolean id="visible">false</boolean>
               </attributes>
             </graphics>
             <motion />
@@ -2380,7 +2437,7 @@
               <attributes>
                 <integer id="tileWidth" name="tileWidth">0</integer>
                 <integer id="tileHeight" name="tileHeight">0</integer>
-                <boolean id="visible">true</boolean>
+                <boolean id="visible">false</boolean>
               </attributes>
             </graphics>
             <motion />
