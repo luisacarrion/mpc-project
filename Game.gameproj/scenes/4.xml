@@ -28,6 +28,249 @@
             </physics>
           </aspects>
         </actor>
+        <actor id="id981038" prototype="id795914">
+          <attributes>
+            <point id="position">
+              <real id="x">375</real>
+              <real id="y">54</real>
+            </point>
+            <size id="size">
+              <real id="width">30</real>
+              <real id="height">30</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <text id="name">circle2_bottom_left_wall</text>
+          </attributes>
+          <behaviors>
+            <behavior id="id717220" class="CompoundBehavior" enabled="true">
+              <attributes>
+                <text id="name">Orbit clockwise</text>
+                <text id="bundleName">Group.behavior</text>
+              </attributes>
+              <behaviors>
+                <behavior id="id882680" class="ConstrainAttributeBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Constrain Attribute</text>
+                    <text id="bundleName">ConstrainAttribute.behavior</text>
+                    <text id="targetAttribute">self.attributes.position.x</text>
+                    <text id="RHS">
+                      <expression>
+                        <string>64*(-1)*cos(</string>
+                        <reference keypath="scene.attributes.id170055" />
+                        <string>+45)+420</string>
+                      </expression>
+                    </text>
+                  </attributes>
+                </behavior>
+                <behavior id="id653562" class="ConstrainAttributeBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Constrain Attribute</text>
+                    <text id="bundleName">ConstrainAttribute.behavior</text>
+                    <text id="targetAttribute">self.attributes.position.y</text>
+                    <text id="RHS">
+                      <expression>
+                        <string>64*(-1)*sin(</string>
+                        <reference keypath="scene.attributes.id170055" />
+                        <string>+45)+100</string>
+                      </expression>
+                    </text>
+                  </attributes>
+                </behavior>
+                <behavior id="id119694" class="ConstrainAttributeBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Constrain Attribute</text>
+                    <text id="bundleName">ConstrainAttribute.behavior</text>
+                    <text id="targetAttribute">self.attributes.rotation</text>
+                    <text id="RHS">
+                      <expression>
+                        <string>45+vectorToAngle(420-</string>
+                        <reference keypath="self.attributes.position.x" />
+                        <string>, 100-</string>
+                        <reference keypath="self.attributes.position.y" />
+                        <string>)</string>
+                      </expression>
+                    </text>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+          </behaviors>
+          <aspects>
+            <graphics>
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+                <boolean id="visible">true</boolean>
+              </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id173960" prototype="id795914">
+          <attributes>
+            <point id="position">
+              <real id="x">420</real>
+              <real id="y">145</real>
+            </point>
+            <size id="size">
+              <real id="width">30</real>
+              <real id="height">120</real>
+            </size>
+            <angle id="rotation">90</angle>
+            <text id="name">circle2_top_wall</text>
+          </attributes>
+          <behaviors>
+            <behavior id="id606118" class="CompoundBehavior" enabled="true">
+              <attributes>
+                <text id="name">Orbit clockwise</text>
+                <text id="bundleName">Group.behavior</text>
+              </attributes>
+              <behaviors>
+                <behavior id="id609163" class="ConstrainAttributeBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Constrain Attribute</text>
+                    <text id="bundleName">ConstrainAttribute.behavior</text>
+                    <text id="targetAttribute">self.attributes.position.x</text>
+                    <text id="RHS">
+                      <expression>
+                        <string>45*(-1)*sin(</string>
+                        <reference keypath="scene.attributes.id170055" />
+                        <string>)+420</string>
+                      </expression>
+                    </text>
+                  </attributes>
+                </behavior>
+                <behavior id="id388577" class="ConstrainAttributeBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Constrain Attribute</text>
+                    <text id="bundleName">ConstrainAttribute.behavior</text>
+                    <text id="targetAttribute">self.attributes.position.y</text>
+                    <text id="RHS">
+                      <expression>
+                        <string>45*cos(</string>
+                        <reference keypath="scene.attributes.id170055" />
+                        <string>)+100</string>
+                      </expression>
+                    </text>
+                  </attributes>
+                </behavior>
+                <behavior id="id305081" class="ConstrainAttributeBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Constrain Attribute</text>
+                    <text id="bundleName">ConstrainAttribute.behavior</text>
+                    <text id="targetAttribute">self.attributes.rotation</text>
+                    <text id="RHS">
+                      <expression>
+                        <string>vectorToAngle(420-</string>
+                        <reference keypath="self.attributes.position.x" />
+                        <string>, 100-</string>
+                        <reference keypath="self.attributes.position.y" />
+                        <string>)</string>
+                      </expression>
+                    </text>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+          </behaviors>
+          <aspects>
+            <graphics>
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+                <boolean id="visible">true</boolean>
+              </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id945335" prototype="id795914">
+          <attributes>
+            <point id="position">
+              <real id="x">465</real>
+              <real id="y">100</real>
+            </point>
+            <size id="size">
+              <real id="width">30</real>
+              <real id="height">120</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <text id="name">circle2_right_wall</text>
+          </attributes>
+          <behaviors>
+            <behavior id="id781138" class="CompoundBehavior" enabled="true">
+              <attributes>
+                <text id="name">Orbit clockwise</text>
+                <text id="bundleName">Group.behavior</text>
+              </attributes>
+              <behaviors>
+                <behavior id="id111042" class="ConstrainAttributeBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Constrain Attribute</text>
+                    <text id="bundleName">ConstrainAttribute.behavior</text>
+                    <text id="targetAttribute">self.attributes.position.x</text>
+                    <text id="RHS">
+                      <expression>
+                        <string>45*cos(</string>
+                        <reference keypath="scene.attributes.id170055" />
+                        <string>)+420</string>
+                      </expression>
+                    </text>
+                  </attributes>
+                </behavior>
+                <behavior id="id269393" class="ConstrainAttributeBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Constrain Attribute</text>
+                    <text id="bundleName">ConstrainAttribute.behavior</text>
+                    <text id="targetAttribute">self.attributes.position.y</text>
+                    <text id="RHS">
+                      <expression>
+                        <string>45*sin(</string>
+                        <reference keypath="scene.attributes.id170055" />
+                        <string>)+100</string>
+                      </expression>
+                    </text>
+                  </attributes>
+                </behavior>
+                <behavior id="id896713" class="ConstrainAttributeBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Constrain Attribute</text>
+                    <text id="bundleName">ConstrainAttribute.behavior</text>
+                    <text id="targetAttribute">self.attributes.rotation</text>
+                    <text id="RHS">
+                      <expression>
+                        <string>vectorToAngle(420-</string>
+                        <reference keypath="self.attributes.position.x" />
+                        <string>, 100-</string>
+                        <reference keypath="self.attributes.position.y" />
+                        <string>)</string>
+                      </expression>
+                    </text>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+          </behaviors>
+          <aspects>
+            <graphics>
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+                <boolean id="visible">true</boolean>
+              </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
         <actor id="id102463" prototype="id795914">
           <attributes>
             <point id="position">
@@ -39,7 +282,7 @@
               <real id="height">120</real>
             </size>
             <angle id="rotation">0</angle>
-            <text id="name">circle1_right_wall Copy 1</text>
+            <text id="name">circle1_left_wall</text>
           </attributes>
           <behaviors>
             <behavior id="id234887" class="CompoundBehavior" enabled="true">
@@ -1064,6 +1307,7 @@
               <attributes>
                 <integer id="tileWidth" name="tileWidth">0</integer>
                 <integer id="tileHeight" name="tileHeight">0</integer>
+                <boolean id="visible">true</boolean>
               </attributes>
             </graphics>
             <motion />
