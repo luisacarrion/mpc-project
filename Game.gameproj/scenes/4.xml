@@ -1776,6 +1776,8 @@
             <graphics>
               <attributes>
                 <boolean id="visible">false</boolean>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
               </attributes>
             </graphics>
             <motion />
@@ -1828,7 +1830,7 @@
               <real id="y">132.72109985352</real>
             </point>
             <size id="size">
-              <real id="width">87</real>
+              <real id="width">63</real>
               <real id="height">63</real>
             </size>
             <angle id="rotation">0</angle>
@@ -1935,10 +1937,10 @@
                           <attributes>
                             <text id="name">Animate Down</text>
                             <text id="bundleName">Animate.behavior</text>
-                            <text id="images">lvl1_herb2</text>
+                            <text id="images">wizard_down1	wizard_down2	wizard_down3	wizard_down4</text>
                             <index id="speed">6</index>
                             <boolean id="loop">true</boolean>
-                            <boolean id="restoreActorImage">true</boolean>
+                            <boolean id="restoreActorImage">false</boolean>
                           </attributes>
                         </behavior>
                       </behaviors>
@@ -2549,7 +2551,7 @@
     <boolean id="id572829" name="block_points_right">true</boolean>
     <boolean id="id692918" name="block_moved">false</boolean>
     <boolean id="id284252" name="circle_goes_clockwise">true</boolean>
-    <real id="id170055" name="circle1_angle">0.0</real>
+    <real id="id170055" name="circle1_angle">0</real>
     <boolean id="id477881" name="circle1_moved">false</boolean>
   </attributes>
 </scene>

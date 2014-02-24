@@ -65,6 +65,18 @@
     <image name="wizard_left4">
       <file name="wizard_left4.png" size="17414" />
     </image>
+    <image name="wizard_down1">
+      <file name="wizard_down1.png" size="12774" />
+    </image>
+    <image name="wizard_down2">
+      <file name="wizard_down2.png" size="13212" />
+    </image>
+    <image name="wizard_down3">
+      <file name="wizard_down3.png" size="12774" />
+    </image>
+    <image name="wizard_down4">
+      <file name="wizard_down4.png" size="13568" />
+    </image>
   </images>
   <behaviors />
 </assets>
