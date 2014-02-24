@@ -1311,6 +1311,7 @@
                 <text id="RHS">
                   <expression>
                     <reference keypath="scene.attributes.id170055" />
+                    <string>+90</string>
                   </expression>
                 </text>
               </attributes>
@@ -1336,22 +1337,20 @@
                 </condition>
               </conditions>
               <behaviors>
-                <behavior id="id353774" class="ChangeAttributeAction" enabled="true">
+                <behavior id="id917500" class="ChangeImageAction" enabled="true">
                   <attributes>
-                    <text id="name">Change Attribute</text>
-                    <text id="bundleName">ChangeAttribute.behavior</text>
-                    <text id="targetAttribute">self.aspects.graphics.attributes.flipVertically</text>
-                    <text id="RHS">false</text>
+                    <text id="name">Change Image</text>
+                    <text id="bundleName">ChangeImage.behavior</text>
+                    <image id="image">lvl1_circle2_clock</image>
                   </attributes>
                 </behavior>
               </behaviors>
               <elseBehaviors>
-                <behavior id="id648249" class="ChangeAttributeAction" enabled="true">
+                <behavior id="id895056" class="ChangeImageAction" enabled="true">
                   <attributes>
-                    <text id="name">Change Attribute</text>
-                    <text id="bundleName">ChangeAttribute.behavior</text>
-                    <text id="targetAttribute">self.aspects.graphics.attributes.flipVertically</text>
-                    <text id="RHS">true</text>
+                    <text id="name">Change Image</text>
+                    <text id="bundleName">ChangeImage.behavior</text>
+                    <image id="image">lvl1_circle2_counterclock</image>
                   </attributes>
                 </behavior>
               </elseBehaviors>
