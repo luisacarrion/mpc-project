@@ -15,7 +15,7 @@
     <boolean id="id313581" name="wizard_body_colliding">false</boolean>
     <integer id="id247950" name="score">0</integer>
     <integer id="id404877" name="move_count">0</integer>
-    <integer id="id668815" name="timer">5</integer>
+    <integer id="id668815" name="timer">40</integer>
     <integer id="id252233" name="level_bonus">100</integer>
     <boolean id="id941955" name="first_touch">true</boolean>
     <integer id="id413710" name="move_play_block">0</integer>

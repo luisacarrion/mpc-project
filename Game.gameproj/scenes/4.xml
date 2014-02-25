@@ -922,6 +922,146 @@
             <boolean id="preloadArt">true</boolean>
           </attributes>
           <behaviors>
+            <behavior id="id117307" class="ParticlesBehavior" enabled="true">
+              <attributes>
+                <text id="name">Particles</text>
+                <text id="bundleName">Particles.behavior</text>
+                <index id="numParticles">80</index>
+                <real id="size">
+                  <expression>
+                    <string>random(30,40)</string>
+                  </expression>
+                </real>
+                <real id="lifetime">0.5</real>
+                <real id="startupTime">0.2</real>
+                <angle id="direction">
+                  <expression>
+                    <string>((</string>
+                    <reference keypath="self.attributes.time" />
+                    <string>*1700)%360)</string>
+                  </expression>
+                </angle>
+                <real id="speed">
+                  <expression>
+                    <string>random(1, 10)</string>
+                  </expression>
+                </real>
+                <image id="image">sparkle2</image>
+                <angle id="rotation">
+                  <expression>
+                    <string>(random(</string>
+                    <reference keypath="self.attributes.time" />
+                    <string>*1700)%360)+90</string>
+                  </expression>
+                </angle>
+                <real id="angularVelocity">100</real>
+                <index id="directionRelativity">0</index>
+                <real id="emitterOffsetX">
+                  <expression>
+                    <string>(</string>
+                    <reference keypath="self.attributes.time" />
+                    <string>*1700%30)*pow(-1, random(1,2))</string>
+                  </expression>
+                </real>
+                <real id="emitterOffsetY">
+                  <expression>
+                    <string>30*(pow(-1, random(1,2)))</string>
+                  </expression>
+                </real>
+                <boolean id="colorChange">true</boolean>
+                <boolean id="sizeChange">false</boolean>
+                <real id="colorTransitionTime">0.4</real>
+                <real id="sizeTarget">
+                  <expression>
+                    <string>random(1,4)</string>
+                  </expression>
+                </real>
+                <real id="sizeTransitionTime">5</real>
+                <color id="color">
+                  <real id="red">0.96078431372549</real>
+                  <real id="green">0.905882352941176</real>
+                  <real id="blue">0.541176470588235</real>
+                  <real id="alpha">0.905882352941176</real>
+                </color>
+                <color id="colorTarget">
+                  <real id="red">0.96078431372549</real>
+                  <real id="green">0.905882352941176</real>
+                  <real id="blue">0.541176470588235</real>
+                  <real id="alpha">0.0274509803921569</real>
+                </color>
+                <boolean id="affectedByGravity">false</boolean>
+                <enumeration id="blendingMode">0</enumeration>
+              </attributes>
+            </behavior>
+            <behavior id="id184919" class="ParticlesBehavior" enabled="true">
+              <attributes>
+                <text id="name">Particles</text>
+                <text id="bundleName">Particles.behavior</text>
+                <index id="numParticles">80</index>
+                <real id="size">
+                  <expression>
+                    <string>random(30,40)</string>
+                  </expression>
+                </real>
+                <real id="lifetime">0.5</real>
+                <real id="startupTime">0.2</real>
+                <angle id="direction">
+                  <expression>
+                    <string>((</string>
+                    <reference keypath="self.attributes.time" />
+                    <string>*1700)%360)</string>
+                  </expression>
+                </angle>
+                <real id="speed">
+                  <expression>
+                    <string>random(1, 10)</string>
+                  </expression>
+                </real>
+                <image id="image">sparkle2</image>
+                <angle id="rotation">
+                  <expression>
+                    <string>(ramdom(</string>
+                    <reference keypath="self.attributes.time" />
+                    <string>*1700)%360)+90</string>
+                  </expression>
+                </angle>
+                <real id="angularVelocity">100</real>
+                <index id="directionRelativity">0</index>
+                <real id="emitterOffsetX">
+                  <expression>
+                    <string>(30)*(pow(-1, random(1,2)))</string>
+                  </expression>
+                </real>
+                <real id="emitterOffsetY">
+                  <expression>
+                    <string>random(-30,30)</string>
+                  </expression>
+                </real>
+                <boolean id="colorChange">true</boolean>
+                <boolean id="sizeChange">false</boolean>
+                <real id="colorTransitionTime">0.4</real>
+                <real id="sizeTarget">
+                  <expression>
+                    <string>random(1,4)</string>
+                  </expression>
+                </real>
+                <real id="sizeTransitionTime">5</real>
+                <color id="color">
+                  <real id="red">0.96078431372549</real>
+                  <real id="green">0.905882352941176</real>
+                  <real id="blue">0.541176470588235</real>
+                  <real id="alpha">0.905882352941176</real>
+                </color>
+                <color id="colorTarget">
+                  <real id="red">0.96078431372549</real>
+                  <real id="green">0.905882352941176</real>
+                  <real id="blue">0.541176470588235</real>
+                  <real id="alpha">0.0274509803921569</real>
+                </color>
+                <boolean id="affectedByGravity">false</boolean>
+                <enumeration id="blendingMode">0</enumeration>
+              </attributes>
+            </behavior>
             <behavior id="id114985" class="ConstrainAttributeBehavior" enabled="true">
               <attributes>
                 <text id="name">Update block1 x coordinate</text>
@@ -1223,6 +1363,75 @@
             <angle id="rotation">0</angle>
           </attributes>
           <behaviors>
+            <behavior id="id615523" class="ParticlesBehavior" enabled="true">
+              <attributes>
+                <text id="name">Particles</text>
+                <text id="bundleName">Particles.behavior</text>
+                <index id="numParticles">80</index>
+                <real id="size">
+                  <expression>
+                    <string>random(30, 40)</string>
+                  </expression>
+                </real>
+                <real id="lifetime">0.5</real>
+                <real id="startupTime">0.2</real>
+                <angle id="direction">
+                  <expression>
+                    <string>((</string>
+                    <reference keypath="self.attributes.time" />
+                    <string>*1700)%360)</string>
+                  </expression>
+                </angle>
+                <real id="speed">
+                  <expression>
+                    <string>random(1, 10)</string>
+                  </expression>
+                </real>
+                <image id="image">sparkle2</image>
+                <angle id="rotation">
+                  <expression>
+                    <string>(random(</string>
+                    <reference keypath="self.attributes.time" />
+                    <string>*1700)%360)+90</string>
+                  </expression>
+                </angle>
+                <real id="angularVelocity">0</real>
+                <index id="directionRelativity">0</index>
+                <real id="emitterOffsetX">
+                  <expression>
+                    <string>cos(</string>
+                    <reference keypath="self.attributes.time" />
+                    <string>*1700%360)*60</string>
+                  </expression>
+                </real>
+                <real id="emitterOffsetY">
+                  <expression>
+                    <string>sin(</string>
+                    <reference keypath="self.attributes.time" />
+                    <string>*1700%360)*60</string>
+                  </expression>
+                </real>
+                <boolean id="colorChange">true</boolean>
+                <boolean id="sizeChange">false</boolean>
+                <real id="colorTransitionTime">1</real>
+                <real id="sizeTarget">5</real>
+                <real id="sizeTransitionTime">0</real>
+                <color id="color">
+                  <real id="red">0.96078431372549</real>
+                  <real id="green">0.905882352941176</real>
+                  <real id="blue">0.541176470588235</real>
+                  <real id="alpha">0.905882352941176</real>
+                </color>
+                <color id="colorTarget">
+                  <real id="red">0.96078431372549</real>
+                  <real id="green">0.905882352941176</real>
+                  <real id="blue">0.541176470588235</real>
+                  <real id="alpha">0.0274509803921569</real>
+                </color>
+                <boolean id="affectedByGravity">false</boolean>
+                <enumeration id="blendingMode">0</enumeration>
+              </attributes>
+            </behavior>
             <behavior id="id422126" class="ConstrainAttributeBehavior" enabled="true">
               <attributes>
                 <text id="name">Constrain Attribute</text>

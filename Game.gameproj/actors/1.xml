@@ -51,10 +51,10 @@
             <text id="prototypeKey">id941809</text>
             <angle id="direction">0</angle>
             <index id="directionSpace">0</index>
-            <real id="x">0</real>
-            <real id="y">0</real>
-            <index id="positionSpace">0</index>
-            <index id="layerOrder">0</index>
+            <real id="x">284</real>
+            <real id="y">30</real>
+            <index id="positionSpace">1</index>
+            <index id="layerOrder">2</index>
           </attributes>
         </behavior>
         <behavior id="id837333" class="ChangeAttributeAction" enabled="true">
