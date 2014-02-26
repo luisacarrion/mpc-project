@@ -80,6 +80,18 @@
     <image name="sparkle2">
       <file name="sparkle2.png" size="2617" />
     </image>
+    <image name="wizard_up1">
+      <file name="wizard_up1.png" size="12777" />
+    </image>
+    <image name="wizard_up2">
+      <file name="wizard_up2.png" size="13599" />
+    </image>
+    <image name="wizard_up3">
+      <file name="wizard_up3.png" size="12777" />
+    </image>
+    <image name="wizard_up4">
+      <file name="wizard_up4.png" size="13676" />
+    </image>
   </images>
   <behaviors />
 </assets>

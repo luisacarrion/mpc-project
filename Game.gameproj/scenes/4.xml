@@ -2013,7 +2013,7 @@
               <real id="height">42</real>
             </size>
             <angle id="rotation">0</angle>
-            <image id="image">lvl1_herb2</image>
+            <image id="image">lvl1_herb</image>
           </attributes>
           <aspects>
             <graphics>
@@ -2094,10 +2094,10 @@
                       <attributes>
                         <text id="name">Animate up</text>
                         <text id="bundleName">Animate.behavior</text>
-                        <text id="images">lvl1_herb</text>
+                        <text id="images">wizard_up1	wizard_up2	wizard_up3	wizard_up4</text>
                         <index id="speed">6</index>
                         <boolean id="loop">true</boolean>
-                        <boolean id="restoreActorImage">true</boolean>
+                        <boolean id="restoreActorImage">false</boolean>
                       </attributes>
                     </behavior>
                   </behaviors>
