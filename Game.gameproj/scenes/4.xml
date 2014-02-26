@@ -489,12 +489,12 @@
           <attributes>
             <text id="name">Wall1 Copy 12</text>
             <point id="position">
-              <real id="x">464.4</real>
-              <real id="y">189.8</real>
+              <real id="x">465</real>
+              <real id="y">190</real>
             </point>
             <size id="size">
-              <real id="width">30.4</real>
-              <real id="height">59.2</real>
+              <real id="width">30</real>
+              <real id="height">60</real>
             </size>
             <angle id="rotation">0</angle>
           </attributes>
@@ -619,11 +619,11 @@
           <attributes>
             <text id="name">Wall1 Copy 7</text>
             <point id="position">
-              <real id="x">372.4</real>
-              <real id="y">189.4</real>
+              <real id="x">374</real>
+              <real id="y">190</real>
             </point>
             <size id="size">
-              <real id="width">33.6</real>
+              <real id="width">30</real>
               <real id="height">60</real>
             </size>
             <angle id="rotation">0</angle>
@@ -645,12 +645,12 @@
           <attributes>
             <text id="name">Wall1 Copy 5</text>
             <point id="position">
-              <real id="x">232.8</real>
-              <real id="y">294.6</real>
+              <real id="x">235</real>
+              <real id="y">295</real>
             </point>
             <size id="size">
-              <real id="width">197.6</real>
-              <real id="height">32</real>
+              <real id="width">200</real>
+              <real id="height">30</real>
             </size>
             <angle id="rotation">0</angle>
           </attributes>
@@ -749,12 +749,12 @@
           <attributes>
             <text id="name">Wall1 Copy 1</text>
             <point id="position">
-              <real id="x">202</real>
-              <real id="y">204.2</real>
+              <real id="x">203</real>
+              <real id="y">205</real>
             </point>
             <size id="size">
-              <real id="width">136</real>
-              <real id="height">30.4</real>
+              <real id="width">135</real>
+              <real id="height">30</real>
             </size>
             <angle id="rotation">0</angle>
           </attributes>
@@ -803,11 +803,11 @@
           <attributes>
             <point id="position">
               <real id="x">75</real>
-              <real id="y">85.4</real>
+              <real id="y">85</real>
             </point>
             <size id="size">
               <real id="width">30</real>
-              <real id="height">30.4</real>
+              <real id="height">30</real>
             </size>
             <angle id="rotation">0</angle>
           </attributes>
@@ -1663,7 +1663,7 @@
           <attributes>
             <point id="position">
               <real id="x">210</real>
-              <real id="y">159.412109375</real>
+              <real id="y">160</real>
             </point>
             <size id="size">
               <real id="width">60</real>
@@ -3660,12 +3660,12 @@
         <actor id="id144396" prototype="id795914">
           <attributes>
             <point id="position">
-              <real id="x">166</real>
-              <real id="y">158.6</real>
+              <real id="x">165</real>
+              <real id="y">160</real>
             </point>
             <size id="size">
               <real id="width">30</real>
-              <real id="height">64</real>
+              <real id="height">60</real>
             </size>
             <angle id="rotation">0</angle>
             <text id="name">block2_left_wall</text>
@@ -3685,7 +3685,7 @@
                     <text id="RHS">
                       <expression>
                         <reference keypath="scene.attributes.id835103" />
-                        <string>+136</string>
+                        <string>+135</string>
                       </expression>
                     </text>
                   </attributes>
@@ -3711,11 +3711,11 @@
           <attributes>
             <point id="position">
               <real id="x">-45</real>
-              <real id="y">38</real>
+              <real id="y">40</real>
             </point>
             <size id="size">
-              <real id="width">89.6</real>
-              <real id="height">64</real>
+              <real id="width">90</real>
+              <real id="height">60</real>
             </size>
             <angle id="rotation">0</angle>
             <text id="name">block1_left_wall</text>
@@ -3862,6 +3862,6 @@
     <boolean id="id284252" name="circle_goes_clockwise">true</boolean>
     <real id="id170055" name="circle1_angle">0</real>
     <boolean id="id477881" name="circle1_moved">false</boolean>
-    <real id="id488717" name="wizard_body_entrance_to_block_x">0.0</real>
+    <real id="id488717" name="wizard_body_entrance_to_block_x">0</real>
   </attributes>
 </scene>
