@@ -25,8 +25,8 @@ Actors & Behaviors
 ==================
 In order to create the first demo, we created the following actors in Game Salad:
 
-	1. Wizard: This is the actor that holds the image of the wizard. It has the "animate" behavior in order to update the wizard sprite as the player moves around. The position of this actor is constrained to the position of the Wizard Body actor.
-	2. Wizard Body: This actor is smaller than the wizard itself. This actor determines the portion of the wizard that collides with the terrain or walls. The main behavior of this actor is "move to", which makes it move to a certain location tapped by the user.
-	3. Circular Platform: This actor "rotates" when the wizard steps on it.
-	4. Square Platform: This actor moves to the right or left when the wizard steps on it.
-	5. Wall: walls are everywhere around the path to prevent the wizard from walking out of the path. Walls don't have a behavior. They just delimit the path that the wizard can take.
+1. Wizard: This is the actor that holds the image of the wizard. It has the "animate" behavior in order to update the wizard sprite as the player moves around. The position of this actor is constrained to the position of the Wizard Body actor.
+2. Wizard Body: This actor is smaller than the wizard itself. This actor determines the portion of the wizard that collides with the terrain or walls. The main behavior of this actor is "move to", which makes it move to a certain location tapped by the user.
+3. Circular Platform: This actor "rotates" when the wizard steps on it.
+4. Square Platform: This actor moves to the right or left when the wizard steps on it.
+5. Wall: walls are everywhere around the path to prevent the wizard from walking out of the path. Walls don't have a behavior. They just delimit the path that the wizard can take.
