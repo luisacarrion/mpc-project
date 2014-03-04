@@ -2,9 +2,9 @@ Grand Wizard
 ============
 
 Authors:
-	* Grace Kihumba
-	* Maria Luisa Carrion
-	* Mustafa Tasdemir
+* Grace Kihumba
+* Maria Luisa Carrion
+* Mustafa Tasdemir
 
 The Game
 ========
@@ -13,8 +13,8 @@ Grand Wizard is a puzzle game that consists in creating a path to get to the end
 
 The story of the game is the following:
 
-A dragon comes to attack the Wizard’s village every 100 years. The Wizard needs to create a magic potion to kill the dragon. 
-He needs to collect all the ingredients needed for the potion by finding paths in a puzzle maze. If he gets the correct path, he obtains the magic potion ingredients and kills the dragon. However, he must avoid ‘spoofed’ paths that lead him to monsters that will kill him.
+A dragon comes to attack the Wizardï¿½s village every 100 years. The Wizard needs to create a magic potion to kill the dragon. 
+He needs to collect all the ingredients needed for the potion by finding paths in a puzzle maze. If he gets the correct path, he obtains the magic potion ingredients and kills the dragon. However, he must avoid ï¿½spoofedï¿½ paths that lead him to monsters that will kill him.
 	
 Software
 ========
