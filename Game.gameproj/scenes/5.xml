@@ -24,17 +24,1183 @@
     </layer>
     <layer id="id370550">
       <actors>
+        <actor id="id134512" prototype="id660038">
+          <attributes>
+            <point id="position">
+              <real id="x">30.0000000000001</real>
+              <real id="y">281</real>
+            </point>
+            <size id="size">
+              <real id="width">60</real>
+              <real id="height">60</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <image id="image">lvl1_square1_right</image>
+            <boolean id="preloadArt">true</boolean>
+            <color id="color">
+              <real id="red">1</real>
+              <real id="green">1</real>
+              <real id="blue">1</real>
+              <real id="alpha">1</real>
+            </color>
+            <text id="name">lvl1_square1_right Copy 1</text>
+          </attributes>
+          <behaviors>
+            <behavior id="id708631" class="RuleBehavior" enabled="false">
+              <attributes>
+                <text id="name">Pulsing color</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id799174" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.color.blue</text>
+                    <text id="name">default name</text>
+                  </attributes>
+                  <predicate type="number">
+                    <attributes>
+                      <text id="operator">=</text>
+                      <real id="RHS">1</real>
+                    </attributes>
+                  </predicate>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior id="id328732" class="InterpolateBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Interpolate</text>
+                    <text id="bundleName">Interpolate.behavior</text>
+                    <boolean id="runToCompletion">true</boolean>
+                    <text id="targetAttribute">self.attributes.color.blue</text>
+                    <real id="finalValue">0</real>
+                    <real id="duration">1</real>
+                    <index id="easing">0</index>
+                  </attributes>
+                </behavior>
+              </behaviors>
+              <elseBehaviors>
+                <behavior id="id316786" class="RuleBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Rule</text>
+                    <text id="bundleName">Rule.behavior</text>
+                    <real id="compoundConditionKind">0</real>
+                  </attributes>
+                  <conditions>
+                    <condition id="id810071" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                      <attributes>
+                        <index id="conditionType">1</index>
+                        <text id="subjectAttribute">self.attributes.color.blue</text>
+                        <text id="name">default name</text>
+                      </attributes>
+                      <predicate type="number">
+                        <attributes>
+                          <text id="operator">=</text>
+                          <real id="RHS">0</real>
+                        </attributes>
+                      </predicate>
+                    </condition>
+                  </conditions>
+                  <behaviors>
+                    <behavior id="id175135" class="InterpolateBehavior" enabled="true">
+                      <attributes>
+                        <text id="name">Interpolate</text>
+                        <text id="bundleName">Interpolate.behavior</text>
+                        <boolean id="runToCompletion">true</boolean>
+                        <text id="targetAttribute">self.attributes.color.blue</text>
+                        <real id="finalValue">1</real>
+                        <real id="duration">6</real>
+                        <index id="easing">0</index>
+                      </attributes>
+                    </behavior>
+                  </behaviors>
+                </behavior>
+              </elseBehaviors>
+            </behavior>
+            <behavior id="id882858" class="ParticlesBehavior" enabled="true">
+              <attributes>
+                <text id="name">Particles shown in the x axis (top &amp; bottom)</text>
+                <text id="bundleName">Particles.behavior</text>
+                <index id="numParticles">50</index>
+                <real id="size">
+                  <expression>
+                    <string>random(30,40)</string>
+                  </expression>
+                </real>
+                <real id="lifetime">0.5</real>
+                <real id="startupTime">0.2</real>
+                <angle id="direction">270</angle>
+                <real id="speed">
+                  <expression>
+                    <string>random(1, 10)</string>
+                  </expression>
+                </real>
+                <image id="image">sparkle2</image>
+                <angle id="rotation">
+                  <expression>
+                    <string>(random(</string>
+                    <reference keypath="self.attributes.time" />
+                    <string>*1700)%360)+90</string>
+                  </expression>
+                </angle>
+                <real id="angularVelocity">100</real>
+                <index id="directionRelativity">0</index>
+                <real id="emitterOffsetX">
+                  <expression>
+                    <string>(</string>
+                    <reference keypath="self.attributes.time" />
+                    <string>*1700%60)-30</string>
+                  </expression>
+                </real>
+                <real id="emitterOffsetY">
+                  <expression>
+                    <string>32*(pow(-1, random(1,2)))</string>
+                  </expression>
+                </real>
+                <boolean id="colorChange">true</boolean>
+                <boolean id="sizeChange">false</boolean>
+                <real id="colorTransitionTime">0.4</real>
+                <real id="sizeTarget">
+                  <expression>
+                    <string>random(1,4)</string>
+                  </expression>
+                </real>
+                <real id="sizeTransitionTime">5</real>
+                <color id="color">
+                  <real id="red">0.647058823529412</real>
+                  <real id="green">0.905882352941176</real>
+                  <real id="blue">0.423529411764706</real>
+                  <real id="alpha">0.905882352941176</real>
+                </color>
+                <color id="colorTarget">
+                  <real id="red">0.96078431372549</real>
+                  <real id="green">0.905882352941176</real>
+                  <real id="blue">0.541176470588235</real>
+                  <real id="alpha">0.0274509803921569</real>
+                </color>
+                <boolean id="affectedByGravity">false</boolean>
+                <enumeration id="blendingMode">0</enumeration>
+              </attributes>
+            </behavior>
+            <behavior id="id835909" class="ParticlesBehavior" enabled="true">
+              <attributes>
+                <text id="name">Particles shown in the y axis (left &amp; right)</text>
+                <text id="bundleName">Particles.behavior</text>
+                <index id="numParticles">50</index>
+                <real id="size">
+                  <expression>
+                    <string>random(30,40)</string>
+                  </expression>
+                </real>
+                <real id="lifetime">0.5</real>
+                <real id="startupTime">0.2</real>
+                <angle id="direction">0</angle>
+                <real id="speed">
+                  <expression>
+                    <string>random(1, 10)</string>
+                  </expression>
+                </real>
+                <image id="image">sparkle2</image>
+                <angle id="rotation">
+                  <expression>
+                    <string>(ramdom(</string>
+                    <reference keypath="self.attributes.time" />
+                    <string>*1700)%360)+90</string>
+                  </expression>
+                </angle>
+                <real id="angularVelocity">100</real>
+                <index id="directionRelativity">0</index>
+                <real id="emitterOffsetX">
+                  <expression>
+                    <string>(32)*(pow(-1, random(1,2)))</string>
+                  </expression>
+                </real>
+                <real id="emitterOffsetY">
+                  <expression>
+                    <string>(</string>
+                    <reference keypath="self.attributes.time" />
+                    <string>*1700%60)-30</string>
+                  </expression>
+                </real>
+                <boolean id="colorChange">true</boolean>
+                <boolean id="sizeChange">false</boolean>
+                <real id="colorTransitionTime">0.4</real>
+                <real id="sizeTarget">
+                  <expression>
+                    <string>random(1,4)</string>
+                  </expression>
+                </real>
+                <real id="sizeTransitionTime">5</real>
+                <color id="color">
+                  <real id="red">0.647058823529412</real>
+                  <real id="green">0.905882352941176</real>
+                  <real id="blue">0.423529411764706</real>
+                  <real id="alpha">0.905882352941176</real>
+                </color>
+                <color id="colorTarget">
+                  <real id="red">0.96078431372549</real>
+                  <real id="green">0.905882352941176</real>
+                  <real id="blue">0.541176470588235</real>
+                  <real id="alpha">0.0274509803921569</real>
+                </color>
+                <boolean id="affectedByGravity">false</boolean>
+                <enumeration id="blendingMode">0</enumeration>
+              </attributes>
+            </behavior>
+            <behavior id="id980174" class="ConstrainAttributeBehavior" enabled="true">
+              <attributes>
+                <text id="name">Update block1 x coordinate</text>
+                <text id="bundleName">ConstrainAttribute.behavior</text>
+                <text id="targetAttribute">scene.attributes.id835103</text>
+                <text id="RHS">
+                  <expression>
+                    <reference keypath="self.attributes.position.x" />
+                  </expression>
+                </text>
+              </attributes>
+            </behavior>
+            <behavior id="id725213" class="RuleBehavior" enabled="true">
+              <attributes>
+                <text id="name">Change direction to the right rule</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id739429" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.position.x</text>
+                    <text id="name">default name</text>
+                  </attributes>
+                  <predicate type="number">
+                    <attributes>
+                      <text id="operator">=</text>
+                      <real id="RHS">30</real>
+                    </attributes>
+                  </predicate>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior id="id186271" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Attribute</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">scene.attributes.id572829</text>
+                    <text id="RHS">true</text>
+                  </attributes>
+                </behavior>
+                <behavior id="id895091" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Attribute</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">self.aspects.graphics.attributes.flipHorizontally</text>
+                    <text id="RHS">false</text>
+                  </attributes>
+                </behavior>
+                <behavior id="id147076" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Set block moved as true</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">scene.attributes.id692918</text>
+                    <text id="RHS">true</text>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+            <behavior id="id236788" class="RuleBehavior" enabled="true">
+              <attributes>
+                <text id="name">Change direction to the left rule</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id144768" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.position.x</text>
+                    <text id="name">default name</text>
+                  </attributes>
+                  <predicate type="number">
+                    <attributes>
+                      <text id="operator">=</text>
+                      <real id="RHS">120</real>
+                    </attributes>
+                  </predicate>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior id="id794630" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Attribute</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">scene.attributes.id572829</text>
+                    <text id="RHS">false</text>
+                  </attributes>
+                </behavior>
+                <behavior id="id686923" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Attribute</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">self.aspects.graphics.attributes.flipHorizontally</text>
+                    <text id="RHS">true</text>
+                  </attributes>
+                </behavior>
+                <behavior id="id584382" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Set block_moved as true</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">scene.attributes.id692918</text>
+                    <text id="RHS">true</text>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+            <behavior id="id871080" class="RuleBehavior" enabled="true">
+              <attributes>
+                <text id="name">Start block movement</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id745970" eventType="overlaps or collides" pluginPredicateTypeIndex="0" class="Collision">
+                  <attributes>
+                    <text id="name">default name</text>
+                    <index id="conditionType">0</index>
+                  </attributes>
+                  <predicate type="collision">
+                    <attributes>
+                      <text id="prototypeKey">id497335</text>
+                      <text id="actorTag" />
+                      <real id="mode">0</real>
+                    </attributes>
+                  </predicate>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior id="id614895" class="RuleBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Move to the right rule</text>
+                    <text id="bundleName">Rule.behavior</text>
+                    <real id="compoundConditionKind">0</real>
+                  </attributes>
+                  <conditions>
+                    <condition id="id710321" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                      <attributes>
+                        <index id="conditionType">1</index>
+                        <text id="subjectAttribute">scene.attributes.id572829</text>
+                        <text id="name">default name</text>
+                      </attributes>
+                      <predicate type="boolean">
+                        <attributes>
+                          <index id="RHS">1</index>
+                        </attributes>
+                      </predicate>
+                    </condition>
+                    <condition id="id747552" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                      <attributes>
+                        <index id="conditionType">1</index>
+                        <text id="subjectAttribute">self.attributes.position.x</text>
+                        <text id="name">default name</text>
+                      </attributes>
+                      <predicate type="number">
+                        <attributes>
+                          <text id="operator">&lt;</text>
+                          <real id="RHS">120</real>
+                        </attributes>
+                      </predicate>
+                    </condition>
+                    <condition id="id955572" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                      <attributes>
+                        <index id="conditionType">1</index>
+                        <text id="subjectAttribute">scene.attributes.id692918</text>
+                        <text id="name">default name</text>
+                      </attributes>
+                      <predicate type="boolean">
+                        <attributes>
+                          <index id="RHS">0</index>
+                        </attributes>
+                      </predicate>
+                    </condition>
+                  </conditions>
+                  <behaviors>
+                    <behavior id="id973453" class="MoveToBehavior" enabled="true">
+                      <attributes>
+                        <text id="name">Move To</text>
+                        <text id="bundleName">MoveTo.behavior</text>
+                        <boolean id="runToCompletion">false</boolean>
+                        <point id="position">
+                          <real id="x">120</real>
+                          <real id="y">
+                            <expression>
+                              <reference keypath="self.attributes.position.y" />
+                            </expression>
+                          </real>
+                        </point>
+                        <index id="space">1</index>
+                        <real id="speed">150</real>
+                      </attributes>
+                    </behavior>
+                  </behaviors>
+                  <elseBehaviors>
+                    <behavior id="id849488" class="RuleBehavior" enabled="true">
+                      <attributes>
+                        <text id="name">Move to the left rule</text>
+                        <text id="bundleName">Rule.behavior</text>
+                        <real id="compoundConditionKind">0</real>
+                      </attributes>
+                      <conditions>
+                        <condition id="id325966" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                          <attributes>
+                            <index id="conditionType">1</index>
+                            <text id="subjectAttribute">scene.attributes.id572829</text>
+                            <text id="name">default name</text>
+                          </attributes>
+                          <predicate type="boolean">
+                            <attributes>
+                              <index id="RHS">0</index>
+                            </attributes>
+                          </predicate>
+                        </condition>
+                        <condition id="id466137" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                          <attributes>
+                            <index id="conditionType">1</index>
+                            <text id="subjectAttribute">self.attributes.position.x</text>
+                            <text id="name">default name</text>
+                          </attributes>
+                          <predicate type="number">
+                            <attributes>
+                              <text id="operator">&gt;</text>
+                              <real id="RHS">30</real>
+                            </attributes>
+                          </predicate>
+                        </condition>
+                        <condition id="id685670" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                          <attributes>
+                            <index id="conditionType">1</index>
+                            <text id="subjectAttribute">scene.attributes.id692918</text>
+                            <text id="name">default name</text>
+                          </attributes>
+                          <predicate type="boolean">
+                            <attributes>
+                              <index id="RHS">0</index>
+                            </attributes>
+                          </predicate>
+                        </condition>
+                      </conditions>
+                      <behaviors>
+                        <behavior id="id584340" class="MoveToBehavior" enabled="true">
+                          <attributes>
+                            <text id="name">Move To</text>
+                            <text id="bundleName">MoveTo.behavior</text>
+                            <boolean id="runToCompletion">false</boolean>
+                            <point id="position">
+                              <real id="x">30</real>
+                              <real id="y">
+                                <expression>
+                                  <reference keypath="self.attributes.position.y" />
+                                </expression>
+                              </real>
+                            </point>
+                            <index id="space">1</index>
+                            <real id="speed">150</real>
+                          </attributes>
+                        </behavior>
+                      </behaviors>
+                    </behavior>
+                  </elseBehaviors>
+                </behavior>
+              </behaviors>
+              <elseBehaviors>
+                <behavior id="id774599" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Set block moved as false</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">scene.attributes.id692918</text>
+                    <text id="RHS">false</text>
+                  </attributes>
+                </behavior>
+              </elseBehaviors>
+            </behavior>
+          </behaviors>
+          <aspects>
+            <graphics>
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id959276" prototype="id660038">
+          <attributes>
+            <point id="position">
+              <real id="x">48.4000000000001</real>
+              <real id="y">61.8</real>
+            </point>
+            <size id="size">
+              <real id="width">60</real>
+              <real id="height">60</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <image id="image">lvl1_square1_right</image>
+            <boolean id="preloadArt">true</boolean>
+            <color id="color">
+              <real id="red">1</real>
+              <real id="green">1</real>
+              <real id="blue">1</real>
+              <real id="alpha">1</real>
+            </color>
+            <text id="name">lvl2_square1</text>
+          </attributes>
+          <behaviors>
+            <behavior id="id526446" class="RuleBehavior" enabled="false">
+              <attributes>
+                <text id="name">Pulsing color</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id216122" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.color.blue</text>
+                    <text id="name">default name</text>
+                  </attributes>
+                  <predicate type="number">
+                    <attributes>
+                      <text id="operator">=</text>
+                      <real id="RHS">1</real>
+                    </attributes>
+                  </predicate>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior id="id860718" class="InterpolateBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Interpolate</text>
+                    <text id="bundleName">Interpolate.behavior</text>
+                    <boolean id="runToCompletion">true</boolean>
+                    <text id="targetAttribute">self.attributes.color.blue</text>
+                    <real id="finalValue">0</real>
+                    <real id="duration">1</real>
+                    <index id="easing">0</index>
+                  </attributes>
+                </behavior>
+              </behaviors>
+              <elseBehaviors>
+                <behavior id="id940044" class="RuleBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Rule</text>
+                    <text id="bundleName">Rule.behavior</text>
+                    <real id="compoundConditionKind">0</real>
+                  </attributes>
+                  <conditions>
+                    <condition id="id367229" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                      <attributes>
+                        <index id="conditionType">1</index>
+                        <text id="subjectAttribute">self.attributes.color.blue</text>
+                        <text id="name">default name</text>
+                      </attributes>
+                      <predicate type="number">
+                        <attributes>
+                          <text id="operator">=</text>
+                          <real id="RHS">0</real>
+                        </attributes>
+                      </predicate>
+                    </condition>
+                  </conditions>
+                  <behaviors>
+                    <behavior id="id532284" class="InterpolateBehavior" enabled="true">
+                      <attributes>
+                        <text id="name">Interpolate</text>
+                        <text id="bundleName">Interpolate.behavior</text>
+                        <boolean id="runToCompletion">true</boolean>
+                        <text id="targetAttribute">self.attributes.color.blue</text>
+                        <real id="finalValue">1</real>
+                        <real id="duration">6</real>
+                        <index id="easing">0</index>
+                      </attributes>
+                    </behavior>
+                  </behaviors>
+                </behavior>
+              </elseBehaviors>
+            </behavior>
+            <behavior id="id571997" class="ParticlesBehavior" enabled="true">
+              <attributes>
+                <text id="name">Particles shown in the x axis (top &amp; bottom)</text>
+                <text id="bundleName">Particles.behavior</text>
+                <index id="numParticles">50</index>
+                <real id="size">
+                  <expression>
+                    <string>random(30,40)</string>
+                  </expression>
+                </real>
+                <real id="lifetime">0.5</real>
+                <real id="startupTime">0.2</real>
+                <angle id="direction">270</angle>
+                <real id="speed">
+                  <expression>
+                    <string>random(1, 10)</string>
+                  </expression>
+                </real>
+                <image id="image">sparkle2</image>
+                <angle id="rotation">
+                  <expression>
+                    <string>(random(</string>
+                    <reference keypath="self.attributes.time" />
+                    <string>*1700)%360)+90</string>
+                  </expression>
+                </angle>
+                <real id="angularVelocity">100</real>
+                <index id="directionRelativity">0</index>
+                <real id="emitterOffsetX">
+                  <expression>
+                    <string>(</string>
+                    <reference keypath="self.attributes.time" />
+                    <string>*1700%60)-30</string>
+                  </expression>
+                </real>
+                <real id="emitterOffsetY">
+                  <expression>
+                    <string>32*(pow(-1, random(1,2)))</string>
+                  </expression>
+                </real>
+                <boolean id="colorChange">true</boolean>
+                <boolean id="sizeChange">false</boolean>
+                <real id="colorTransitionTime">0.4</real>
+                <real id="sizeTarget">
+                  <expression>
+                    <string>random(1,4)</string>
+                  </expression>
+                </real>
+                <real id="sizeTransitionTime">5</real>
+                <color id="color">
+                  <real id="red">0.647058823529412</real>
+                  <real id="green">0.905882352941176</real>
+                  <real id="blue">0.423529411764706</real>
+                  <real id="alpha">0.905882352941176</real>
+                </color>
+                <color id="colorTarget">
+                  <real id="red">0.96078431372549</real>
+                  <real id="green">0.905882352941176</real>
+                  <real id="blue">0.541176470588235</real>
+                  <real id="alpha">0.0274509803921569</real>
+                </color>
+                <boolean id="affectedByGravity">false</boolean>
+                <enumeration id="blendingMode">0</enumeration>
+              </attributes>
+            </behavior>
+            <behavior id="id837076" class="ParticlesBehavior" enabled="true">
+              <attributes>
+                <text id="name">Particles shown in the y axis (left &amp; right)</text>
+                <text id="bundleName">Particles.behavior</text>
+                <index id="numParticles">50</index>
+                <real id="size">
+                  <expression>
+                    <string>random(30,40)</string>
+                  </expression>
+                </real>
+                <real id="lifetime">0.5</real>
+                <real id="startupTime">0.2</real>
+                <angle id="direction">0</angle>
+                <real id="speed">
+                  <expression>
+                    <string>random(1, 10)</string>
+                  </expression>
+                </real>
+                <image id="image">sparkle2</image>
+                <angle id="rotation">
+                  <expression>
+                    <string>(ramdom(</string>
+                    <reference keypath="self.attributes.time" />
+                    <string>*1700)%360)+90</string>
+                  </expression>
+                </angle>
+                <real id="angularVelocity">100</real>
+                <index id="directionRelativity">0</index>
+                <real id="emitterOffsetX">
+                  <expression>
+                    <string>(32)*(pow(-1, random(1,2)))</string>
+                  </expression>
+                </real>
+                <real id="emitterOffsetY">
+                  <expression>
+                    <string>(</string>
+                    <reference keypath="self.attributes.time" />
+                    <string>*1700%60)-30</string>
+                  </expression>
+                </real>
+                <boolean id="colorChange">true</boolean>
+                <boolean id="sizeChange">false</boolean>
+                <real id="colorTransitionTime">0.4</real>
+                <real id="sizeTarget">
+                  <expression>
+                    <string>random(1,4)</string>
+                  </expression>
+                </real>
+                <real id="sizeTransitionTime">5</real>
+                <color id="color">
+                  <real id="red">0.647058823529412</real>
+                  <real id="green">0.905882352941176</real>
+                  <real id="blue">0.423529411764706</real>
+                  <real id="alpha">0.905882352941176</real>
+                </color>
+                <color id="colorTarget">
+                  <real id="red">0.96078431372549</real>
+                  <real id="green">0.905882352941176</real>
+                  <real id="blue">0.541176470588235</real>
+                  <real id="alpha">0.0274509803921569</real>
+                </color>
+                <boolean id="affectedByGravity">false</boolean>
+                <enumeration id="blendingMode">0</enumeration>
+              </attributes>
+            </behavior>
+            <behavior id="id104467" class="ConstrainAttributeBehavior" enabled="true">
+              <attributes>
+                <text id="name">Update block1 x coordinate</text>
+                <text id="bundleName">ConstrainAttribute.behavior</text>
+                <text id="targetAttribute">scene.attributes.id835103</text>
+                <text id="RHS">
+                  <expression>
+                    <reference keypath="self.attributes.position.x" />
+                  </expression>
+                </text>
+              </attributes>
+            </behavior>
+            <behavior id="id585966" class="RuleBehavior" enabled="true">
+              <attributes>
+                <text id="name">Change direction to the right rule</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id377246" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.position.x</text>
+                    <text id="name">default name</text>
+                  </attributes>
+                  <predicate type="number">
+                    <attributes>
+                      <text id="operator">=</text>
+                      <real id="RHS">30</real>
+                    </attributes>
+                  </predicate>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior id="id117039" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Attribute</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">scene.attributes.id572829</text>
+                    <text id="RHS">true</text>
+                  </attributes>
+                </behavior>
+                <behavior id="id717695" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Attribute</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">self.aspects.graphics.attributes.flipHorizontally</text>
+                    <text id="RHS">false</text>
+                  </attributes>
+                </behavior>
+                <behavior id="id559382" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Set block moved as true</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">scene.attributes.id692918</text>
+                    <text id="RHS">true</text>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+            <behavior id="id590618" class="RuleBehavior" enabled="true">
+              <attributes>
+                <text id="name">Change direction to the left rule</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id467251" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.position.x</text>
+                    <text id="name">default name</text>
+                  </attributes>
+                  <predicate type="number">
+                    <attributes>
+                      <text id="operator">=</text>
+                      <real id="RHS">120</real>
+                    </attributes>
+                  </predicate>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior id="id449049" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Attribute</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">scene.attributes.id572829</text>
+                    <text id="RHS">false</text>
+                  </attributes>
+                </behavior>
+                <behavior id="id879148" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Attribute</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">self.aspects.graphics.attributes.flipHorizontally</text>
+                    <text id="RHS">true</text>
+                  </attributes>
+                </behavior>
+                <behavior id="id378407" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Set block_moved as true</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">scene.attributes.id692918</text>
+                    <text id="RHS">true</text>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+            <behavior id="id814196" class="RuleBehavior" enabled="true">
+              <attributes>
+                <text id="name">Start block movement</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id607943" eventType="overlaps or collides" pluginPredicateTypeIndex="0" class="Collision">
+                  <attributes>
+                    <text id="name">default name</text>
+                    <index id="conditionType">0</index>
+                  </attributes>
+                  <predicate type="collision">
+                    <attributes>
+                      <text id="prototypeKey">id497335</text>
+                      <text id="actorTag" />
+                      <real id="mode">0</real>
+                    </attributes>
+                  </predicate>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior id="id195023" class="RuleBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Move to the right rule</text>
+                    <text id="bundleName">Rule.behavior</text>
+                    <real id="compoundConditionKind">0</real>
+                  </attributes>
+                  <conditions>
+                    <condition id="id581227" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                      <attributes>
+                        <index id="conditionType">1</index>
+                        <text id="subjectAttribute">scene.attributes.id572829</text>
+                        <text id="name">default name</text>
+                      </attributes>
+                      <predicate type="boolean">
+                        <attributes>
+                          <index id="RHS">1</index>
+                        </attributes>
+                      </predicate>
+                    </condition>
+                    <condition id="id143073" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                      <attributes>
+                        <index id="conditionType">1</index>
+                        <text id="subjectAttribute">self.attributes.position.x</text>
+                        <text id="name">default name</text>
+                      </attributes>
+                      <predicate type="number">
+                        <attributes>
+                          <text id="operator">&lt;</text>
+                          <real id="RHS">120</real>
+                        </attributes>
+                      </predicate>
+                    </condition>
+                    <condition id="id190333" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                      <attributes>
+                        <index id="conditionType">1</index>
+                        <text id="subjectAttribute">scene.attributes.id692918</text>
+                        <text id="name">default name</text>
+                      </attributes>
+                      <predicate type="boolean">
+                        <attributes>
+                          <index id="RHS">0</index>
+                        </attributes>
+                      </predicate>
+                    </condition>
+                  </conditions>
+                  <behaviors>
+                    <behavior id="id421864" class="MoveToBehavior" enabled="true">
+                      <attributes>
+                        <text id="name">Move To</text>
+                        <text id="bundleName">MoveTo.behavior</text>
+                        <boolean id="runToCompletion">false</boolean>
+                        <point id="position">
+                          <real id="x">120</real>
+                          <real id="y">
+                            <expression>
+                              <reference keypath="self.attributes.position.y" />
+                            </expression>
+                          </real>
+                        </point>
+                        <index id="space">1</index>
+                        <real id="speed">150</real>
+                      </attributes>
+                    </behavior>
+                  </behaviors>
+                  <elseBehaviors>
+                    <behavior id="id585613" class="RuleBehavior" enabled="true">
+                      <attributes>
+                        <text id="name">Move to the left rule</text>
+                        <text id="bundleName">Rule.behavior</text>
+                        <real id="compoundConditionKind">0</real>
+                      </attributes>
+                      <conditions>
+                        <condition id="id947384" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                          <attributes>
+                            <index id="conditionType">1</index>
+                            <text id="subjectAttribute">scene.attributes.id572829</text>
+                            <text id="name">default name</text>
+                          </attributes>
+                          <predicate type="boolean">
+                            <attributes>
+                              <index id="RHS">0</index>
+                            </attributes>
+                          </predicate>
+                        </condition>
+                        <condition id="id399148" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                          <attributes>
+                            <index id="conditionType">1</index>
+                            <text id="subjectAttribute">self.attributes.position.x</text>
+                            <text id="name">default name</text>
+                          </attributes>
+                          <predicate type="number">
+                            <attributes>
+                              <text id="operator">&gt;</text>
+                              <real id="RHS">30</real>
+                            </attributes>
+                          </predicate>
+                        </condition>
+                        <condition id="id916579" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                          <attributes>
+                            <index id="conditionType">1</index>
+                            <text id="subjectAttribute">scene.attributes.id692918</text>
+                            <text id="name">default name</text>
+                          </attributes>
+                          <predicate type="boolean">
+                            <attributes>
+                              <index id="RHS">0</index>
+                            </attributes>
+                          </predicate>
+                        </condition>
+                      </conditions>
+                      <behaviors>
+                        <behavior id="id987943" class="MoveToBehavior" enabled="true">
+                          <attributes>
+                            <text id="name">Move To</text>
+                            <text id="bundleName">MoveTo.behavior</text>
+                            <boolean id="runToCompletion">false</boolean>
+                            <point id="position">
+                              <real id="x">30</real>
+                              <real id="y">
+                                <expression>
+                                  <reference keypath="self.attributes.position.y" />
+                                </expression>
+                              </real>
+                            </point>
+                            <index id="space">1</index>
+                            <real id="speed">150</real>
+                          </attributes>
+                        </behavior>
+                      </behaviors>
+                    </behavior>
+                  </elseBehaviors>
+                </behavior>
+              </behaviors>
+              <elseBehaviors>
+                <behavior id="id701530" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Set block moved as false</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">scene.attributes.id692918</text>
+                    <text id="RHS">false</text>
+                  </attributes>
+                </behavior>
+              </elseBehaviors>
+            </behavior>
+          </behaviors>
+          <aspects>
+            <graphics>
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
         <actor id="id643174" prototype="id551912">
           <attributes>
             <point id="position">
-              <real id="x">272.4</real>
-              <real id="y">142.6</real>
+              <real id="x">284</real>
+              <real id="y">160</real>
             </point>
             <size id="size">
-              <real id="width">1136</real>
-              <real id="height">640</real>
+              <real id="width">568</real>
+              <real id="height">320</real>
             </size>
             <angle id="rotation">0</angle>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id175516" prototype="id660038">
+          <attributes>
+            <point id="position">
+              <real id="x">30</real>
+              <real id="y">280</real>
+            </point>
+            <size id="size">
+              <real id="width">60</real>
+              <real id="height">60</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <image id="image">lvl2_square_right</image>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id253554" prototype="id660038">
+          <attributes>
+            <point id="position">
+              <real id="x">210</real>
+              <real id="y">160</real>
+            </point>
+            <size id="size">
+              <real id="width">60</real>
+              <real id="height">60</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <image id="image">lvl2_square_right</image>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id519836" prototype="id660038">
+          <attributes>
+            <point id="position">
+              <real id="x">300</real>
+              <real id="y">220</real>
+            </point>
+            <size id="size">
+              <real id="width">60</real>
+              <real id="height">60</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <image id="image">lvl2_square_left</image>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id999868" prototype="id660038">
+          <attributes>
+            <point id="position">
+              <real id="x">480</real>
+              <real id="y">280</real>
+            </point>
+            <size id="size">
+              <real id="width">60</real>
+              <real id="height">60</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <image id="image">lvl2_square_left</image>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id922974" prototype="id929814">
+          <attributes>
+            <point id="position">
+              <real id="x">298.8</real>
+              <real id="y">287.4</real>
+            </point>
+            <size id="size">
+              <real id="width">33</real>
+              <real id="height">42</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <image id="image">lvl2_herb</image>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id488115" prototype="id259563">
+          <attributes>
+            <point id="position">
+              <real id="x">300</real>
+              <real id="y">70</real>
+            </point>
+            <size id="size">
+              <real id="width">120</real>
+              <real id="height">120</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <image id="image">lvl1_circle1_clockwise</image>
+            <boolean id="preloadArt">true</boolean>
           </attributes>
           <aspects>
             <graphics>
@@ -57,7 +1223,7 @@
     <text id="name">Level2</text>
     <real id="time">0</real>
     <size id="size">
-      <real id="width">480</real>
+      <real id="width">568</real>
       <real id="height">320</real>
     </size>
     <boolean id="wrapX">false</boolean>
@@ -78,7 +1244,7 @@
         <real id="y">0</real>
       </point>
       <size id="size">
-        <real id="width">480</real>
+        <real id="width">568</real>
         <real id="height">320</real>
       </size>
       <size id="trackingArea">
