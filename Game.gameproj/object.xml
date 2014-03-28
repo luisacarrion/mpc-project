@@ -51,6 +51,7 @@
     <actor id="id298285" />
     <actor id="id169085" />
     <actor id="id508070" />
+    <actor id="id551912" />
   </prototypes>
   <plugins>
     <attributes id="playhaven" />
@@ -63,5 +64,6 @@
     <scene id="id417353" />
     <scene id="id969112" />
     <scene id="id421575" />
+    <scene id="id118959" />
   </scenes>
 </game>

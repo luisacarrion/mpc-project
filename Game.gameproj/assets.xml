@@ -92,6 +92,24 @@
     <image name="wizard_up4">
       <file name="wizard_up4.png" size="13676" />
     </image>
+    <image name="lvl1_circle1_clockwise">
+      <file name="lvl1_circle1_clockwise.png" size="9979" />
+    </image>
+    <image name="lvl1_circle1_counterclockwise">
+      <file name="lvl1_circle1_counterclockwise.png" size="9980" />
+    </image>
+    <image name="lvl2_herb">
+      <file name="lvl2_herb.png" size="13876" />
+    </image>
+    <image name="lvl2_scenario">
+      <file name="lvl2_scenario.png" size="69032" />
+    </image>
+    <image name="lvl2_square_left">
+      <file name="lvl2_square_left.png" size="2543" />
+    </image>
+    <image name="lvl2_square_right">
+      <file name="lvl2_square_right.png" size="2504" />
+    </image>
   </images>
   <behaviors />
 </assets>
