@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<behavior PGFVersion="0.19" id="id509747" class="ConstrainAttributeBehavior" GSCVersion="0.10.4.1" enabled="true"><attributes><text id="name">Update wizard_body_linear_vy</text><text id="bundleName">ConstrainAttribute.behavior</text><text id="targetAttribute">game.attributes.id850041</text><text id="RHS"><expression><reference keypath="self.aspects.motion.attributes.linearVelocity.y"/></expression></text></attributes></behavior>

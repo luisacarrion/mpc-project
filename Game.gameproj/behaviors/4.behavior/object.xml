@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<behavior PGFVersion="0.19" id="id193239" class="CollideBehavior" GSCVersion="0.10.4.1" enabled="true"><attributes><text id="name">Collide with walls</text><text id="bundleName">Collide.behavior</text><text id="prototypeKey">id335757</text><text id="actorTag">Walls</text><index id="mode">1</index></attributes></behavior>
