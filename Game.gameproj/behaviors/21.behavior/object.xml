@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<behavior PGFVersion="0.19" id="id376673" class="ChangeAttributeAction" GSCVersion="0.10.4.1" enabled="true"><attributes><text id="name">Set block moved as false</text><text id="bundleName">ChangeAttribute.behavior</text><text id="targetAttribute">scene.attributes.id407897</text><text id="RHS">false</text></attributes></behavior>
