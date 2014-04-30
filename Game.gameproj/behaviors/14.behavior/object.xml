@@ -1,2 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<behavior PGFVersion="0.19" id="id114985" class="ConstrainAttributeBehavior" GSCVersion="0.10.4.1" enabled="true"><attributes><text id="name">Update block1 x coordinate</text><text id="bundleName">ConstrainAttribute.behavior</text><text id="targetAttribute">scene.attributes.id835103</text><text id="RHS"><expression><reference keypath="self.attributes.position.x"/></expression></text></attributes></behavior>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<behavior id="id376673" class="ChangeAttributeAction" enabled="true" GSCVersion="0.10.4" PGFVersion="0.19">
+  <attributes>
+    <text id="name">Set block moved as false</text>
+    <text id="bundleName">ChangeAttribute.behavior</text>
+    <text id="targetAttribute">scene.attributes.id407897</text>
+    <text id="RHS">false</text>
+  </attributes>
+</behavior>

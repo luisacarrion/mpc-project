@@ -1,2 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<info PGFVersion="0.19" GSCVersion="0.10.4.1"><Interface>ConstrainAttributeBehavior</Interface><ControllerClass>GSBehaviorViewController</ControllerClass><DisplayName>Update wizard_body_x</DisplayName></info>
+<?xml version="1.0" encoding="utf-8"?>
+<info PGFVersion="0.19" GSCVersion="0.10.4">
+  <Interface>RuleBehavior</Interface>
+  <ControllerClass>GSRuleBehaviorViewController</ControllerClass>
+  <DisplayName>Start block movement</DisplayName>
+  <DisplayIndex>0</DisplayIndex>
+</info>

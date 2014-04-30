@@ -1,2 +1,71 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<game GSCVersion="0.10.4.1" PGFVersion="0.19" title="Game"><resolutionIndependence>1</resolutionIndependence><instructions>Add game instructions here.</instructions><resolution>12</resolution><longDescription>A tabula rasa, a blank slate on which one may create a masterpiece.</longDescription><prototypes><actor id="id260265"/><actor id="id663216"/><actor id="id259563"/><actor id="id894561"/><actor id="id652446"/><actor id="id139761"/><actor id="id660038"/><actor id="id929814"/><actor id="id494714"/><actor id="id795914"/><actor id="id497335"/><actor id="id398850"/><actor id="id941809"/><actor id="id741140"/><actor id="id298285"/><actor id="id169085"/><actor id="id508070"/><actor id="id551912"/></prototypes><plugins><attributes id="playhaven"/><attributes id="qqgamecenter"><boolean id="enabled">false</boolean></attributes></plugins><scenes><scene id="id911790"/><scene id="id417353"/><scene id="id969112"/><scene id="id421575"/><scene id="id118959"/></scenes><attributes><text id="name">default name</text><real id="time">0</real><size id="displaySize"><real id="width">568</real><real id="height">320</real></size><text id="actorTags">All	Walls</text><real name="wizard_body_y" id="id107654">0</real><real name="wizard_body_x" id="id378006">0</real><real name="wizard_body_linear_vy" id="id850041">0</real><real name="wizard_body_linear_vx" id="id117804">0</real><boolean name="wizard_body_colliding" id="id313581">false</boolean><integer name="score" id="id247950">0</integer><integer name="move_count" id="id404877">0</integer><integer name="timer" id="id668815">40</integer><integer name="level_bonus" id="id252233">100</integer><boolean name="first_touch" id="id941955">true</boolean><integer name="move_play_block" id="id413710">0</integer><real name="play_block1_x" id="id204507">0</real><real name="play_block1_y" id="id650952">0</real><real name="play_blocks_diff" id="id753940">0</real><real name="bottom_ctr_x" id="id972722">0</real><real name="bottom_ctr_y" id="id640959">0</real><boolean name="play_block_has_moved" id="id280027">false</boolean><real name="wizard_body_diff_x" id="id749353">0</real><real name="wizard_body_diff_y" id="id401116">0</real><boolean name="play_block3_has_moved" id="id930538">false</boolean><real name="top_ctr_x" id="id862427">0</real></attributes></game>
+<?xml version="1.0" encoding="utf-8"?>
+<game title="Game" GSCVersion="0.10.4" PGFVersion="0.19">
+  <attributes>
+    <text id="name">default name</text>
+    <real id="time">0</real>
+    <size id="displaySize">
+      <real id="width">568</real>
+      <real id="height">320</real>
+    </size>
+    <text id="actorTags">All	Walls</text>
+    <real id="id107654" name="wizard_body_y">0</real>
+    <real id="id378006" name="wizard_body_x">0</real>
+    <real id="id850041" name="wizard_body_linear_vy">0</real>
+    <real id="id117804" name="wizard_body_linear_vx">0</real>
+    <boolean id="id313581" name="wizard_body_colliding">false</boolean>
+    <integer id="id247950" name="score">0</integer>
+    <integer id="id404877" name="move_count">0</integer>
+    <integer id="id668815" name="timer">40</integer>
+    <integer id="id252233" name="level_bonus">100</integer>
+    <boolean id="id941955" name="first_touch">true</boolean>
+    <integer id="id413710" name="move_play_block">0</integer>
+    <real id="id204507" name="play_block1_x">0</real>
+    <real id="id650952" name="play_block1_y">0</real>
+    <real id="id753940" name="play_blocks_diff">0</real>
+    <real id="id972722" name="bottom_ctr_x">0</real>
+    <real id="id640959" name="bottom_ctr_y">0</real>
+    <boolean id="id280027" name="play_block_has_moved">false</boolean>
+    <real id="id749353" name="wizard_body_diff_x">0</real>
+    <real id="id401116" name="wizard_body_diff_y">0</real>
+    <boolean id="id930538" name="play_block3_has_moved">false</boolean>
+    <real id="id862427" name="top_ctr_x">0</real>
+  </attributes>
+  <tags />
+  <resolutionIndependence>1</resolutionIndependence>
+  <instructions>Add game instructions here.</instructions>
+  <resolution>12</resolution>
+  <longDescription>A tabula rasa, a blank slate on which one may create a masterpiece.</longDescription>
+  <prototypes>
+    <actor id="id260265" />
+    <actor id="id663216" />
+    <actor id="id259563" />
+    <actor id="id894561" />
+    <actor id="id652446" />
+    <actor id="id139761" />
+    <actor id="id660038" />
+    <actor id="id929814" />
+    <actor id="id494714" />
+    <actor id="id795914" />
+    <actor id="id497335" />
+    <actor id="id398850" />
+    <actor id="id941809" />
+    <actor id="id741140" />
+    <actor id="id298285" />
+    <actor id="id169085" />
+    <actor id="id508070" />
+    <actor id="id551912" />
+  </prototypes>
+  <plugins>
+    <attributes id="playhaven" />
+    <attributes id="qqgamecenter">
+      <boolean id="enabled">false</boolean>
+    </attributes>
+  </plugins>
+  <scenes>
+    <scene id="id911790" />
+    <scene id="id417353" />
+    <scene id="id969112" />
+    <scene id="id421575" />
+    <scene id="id118959" />
+  </scenes>
+</game>

@@ -1,2 +1,63 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<behavior enabled="true" id="id564832" class="RuleBehavior" PGFVersion="0.19" GSCVersion="0.10.4.1"><attributes><text id="name">Start block movement</text><text id="bundleName">Rule.behavior</text><real id="compoundConditionKind">0</real></attributes><conditions><condition id="id866662" pluginPredicateTypeIndex="0" eventType="overlaps or collides"><attributes><index id="conditionType">0</index><text id="name">default name</text></attributes><predicate type="collision"><attributes><text id="prototypeKey">id497335</text><text id="actorTag"></text><real id="mode">0</real></attributes></predicate></condition></conditions><behaviors><behavior enabled="true" id="id237045" class="RuleBehavior"><attributes><text id="name">Move to the right rule</text><text id="bundleName">Rule.behavior</text><real id="compoundConditionKind">0</real></attributes><conditions><condition id="id269024" pluginPredicateTypeIndex="0" eventType="mouse position"><attributes><index id="conditionType">1</index><text id="subjectAttribute">scene.attributes.id960356</text><text id="name">default name</text></attributes><predicate type="boolean"><attributes><index id="RHS">0</index></attributes></predicate></condition><condition id="id965109" pluginPredicateTypeIndex="0" eventType="mouse position"><attributes><index id="conditionType">1</index><text id="subjectAttribute">self.attributes.position.x</text><text id="name">default name</text></attributes><predicate type="number"><attributes><text id="operator">&lt;</text><real id="RHS">480</real></attributes></predicate></condition></conditions><behaviors><behavior id="id254405" class="MoveToBehavior" enabled="true"><attributes><text id="name">Move To</text><text id="bundleName">MoveTo.behavior</text><boolean id="runToCompletion">false</boolean><point id="position"><real id="x">480</real><real id="y"><expression><reference keypath="self.attributes.position.y"/></expression></real></point><index id="space">1</index><real id="speed">150</real></attributes></behavior></behaviors><elseBehaviors><behavior enabled="true" id="id691188" class="RuleBehavior"><attributes><text id="name">Move to the left rule</text><text id="bundleName">Rule.behavior</text><real id="compoundConditionKind">0</real></attributes><conditions><condition id="id731163" pluginPredicateTypeIndex="0" eventType="mouse position"><attributes><index id="conditionType">1</index><text id="subjectAttribute">scene.attributes.id960356</text><text id="name">default name</text></attributes><predicate type="boolean"><attributes><index id="RHS">1</index></attributes></predicate></condition><condition id="id365147" pluginPredicateTypeIndex="0" eventType="mouse position"><attributes><index id="conditionType">1</index><text id="subjectAttribute">self.attributes.position.x</text><text id="name">default name</text></attributes><predicate type="number"><attributes><text id="operator">&gt;</text><real id="RHS">390</real></attributes></predicate></condition></conditions><behaviors><behavior id="id316581" class="MoveToBehavior" enabled="true"><attributes><text id="name">Move To</text><text id="bundleName">MoveTo.behavior</text><boolean id="runToCompletion">true</boolean><point id="position"><real id="x">390</real><real id="y"><expression><reference keypath="self.attributes.position.y"/></expression></real></point><index id="space">1</index><real id="speed">150</real></attributes></behavior></behaviors><elseBehaviors/></behavior><behavior id="id115355" class="LogDebuggingStatementAction" enabled="true"><attributes><text id="name">Log Debugging Statement</text><text id="bundleName">LogDebuggingStatement.behavior</text><text id="text">block points left=true,self.x&gt;405,wizard entered=false</text></attributes></behavior><behavior id="id855158" class="LogDebuggingStatementAction" enabled="true"><attributes><text id="name">Log Debugging Statement</text><text id="bundleName">LogDebuggingStatement.behavior</text><text id="text"><expression><reference keypath="scene.attributes.id960356"/></expression></text></attributes></behavior><behavior id="id278453" class="LogDebuggingStatementAction" enabled="true"><attributes><text id="name">Log Debugging Statement</text><text id="bundleName">LogDebuggingStatement.behavior</text><text id="text"><expression><reference keypath="self.attributes.position.x"/></expression></text></attributes></behavior></elseBehaviors></behavior></behaviors><elseBehaviors><behavior id="id376673" class="ChangeAttributeAction" enabled="false"><attributes><text id="name">Set block moved as false</text><text id="bundleName">ChangeAttribute.behavior</text><text id="targetAttribute">scene.attributes.id407897</text><text id="RHS">false</text></attributes></behavior></elseBehaviors></behavior>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<behavior id="id523007" class="RuleBehavior" enabled="true" GSCVersion="0.10.4" PGFVersion="0.19">
+  <attributes>
+    <text id="name">Stabilize movement to the left</text>
+    <text id="bundleName">Rule.behavior</text>
+    <real id="compoundConditionKind">0</real>
+  </attributes>
+  <conditions>
+    <condition id="id570626" eventType="mouse position" pluginPredicateTypeIndex="0">
+      <attributes>
+        <index id="conditionType">1</index>
+        <text id="subjectAttribute">self.aspects.motion.attributes.linearVelocity.x</text>
+        <text id="name">default name</text>
+      </attributes>
+      <predicate type="number">
+        <attributes>
+          <text id="operator">&lt;</text>
+          <real id="RHS">0</real>
+        </attributes>
+      </predicate>
+    </condition>
+    <condition id="id159370" eventType="mouse position" pluginPredicateTypeIndex="0">
+      <attributes>
+        <index id="conditionType">1</index>
+        <text id="subjectAttribute">self.attributes.position.x</text>
+        <text id="name">default name</text>
+      </attributes>
+      <predicate type="number">
+        <attributes>
+          <text id="operator">&lt;=</text>
+          <real id="RHS">
+            <expression>
+              <reference keypath="game.devices.touches.touch1.x" />
+            </expression>
+          </real>
+        </attributes>
+      </predicate>
+    </condition>
+  </conditions>
+  <behaviors>
+    <behavior id="id216614" class="ConstrainAttributeBehavior" enabled="true">
+      <attributes>
+        <text id="name">Constrain Attribute</text>
+        <text id="bundleName">ConstrainAttribute.behavior</text>
+        <text id="targetAttribute">game.devices.touches.touch1.x</text>
+        <text id="RHS">
+          <expression>
+            <reference keypath="self.attributes.position.x" />
+          </expression>
+        </text>
+      </attributes>
+    </behavior>
+    <behavior id="id730372" class="ConstrainAttributeBehavior" enabled="true">
+      <attributes>
+        <text id="name">Constrain Attribute</text>
+        <text id="bundleName">ConstrainAttribute.behavior</text>
+        <text id="targetAttribute">self.aspects.motion.attributes.linearVelocity.x</text>
+        <text id="RHS">0</text>
+      </attributes>
+    </behavior>
+  </behaviors>
+  <elseBehaviors />
+</behavior>

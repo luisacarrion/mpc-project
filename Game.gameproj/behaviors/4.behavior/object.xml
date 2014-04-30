@@ -1,2 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<behavior PGFVersion="0.19" id="id193239" class="CollideBehavior" GSCVersion="0.10.4.1" enabled="true"><attributes><text id="name">Collide with walls</text><text id="bundleName">Collide.behavior</text><text id="prototypeKey">id335757</text><text id="actorTag">Walls</text><index id="mode">1</index></attributes></behavior>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<behavior id="id509747" class="ConstrainAttributeBehavior" enabled="true" GSCVersion="0.10.4" PGFVersion="0.19">
+  <attributes>
+    <text id="name">Update wizard_body_linear_vy</text>
+    <text id="bundleName">ConstrainAttribute.behavior</text>
+    <text id="targetAttribute">game.attributes.id850041</text>
+    <text id="RHS">
+      <expression>
+        <reference keypath="self.aspects.motion.attributes.linearVelocity.y" />
+      </expression>
+    </text>
+  </attributes>
+</behavior>

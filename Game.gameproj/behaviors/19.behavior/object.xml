@@ -1,2 +1,278 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<behavior PGFVersion="0.19" GSCVersion="0.10.4.1" id="id321807" class="CompoundBehavior" enabled="true"><attributes><text id="name">Move block when twin moves</text><text id="bundleName">Group.behavior</text></attributes><behaviors><behavior id="id624259" class="ConstrainAttributeBehavior" enabled="true"><attributes><text id="name">Constrain Attribute</text><text id="bundleName">ConstrainAttribute.behavior</text><text id="targetAttribute">self.attributes.position.x</text><text id="RHS"><expression><reference keypath="scene.attributes.id835103"/><string>+180</string></expression></text></attributes></behavior></behaviors></behavior>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<behavior id="id849612" class="RuleBehavior" enabled="true" GSCVersion="0.10.4" PGFVersion="0.19">
+  <attributes>
+    <text id="name">Move when touch is released</text>
+    <text id="bundleName">Rule.behavior</text>
+    <real id="compoundConditionKind">1</real>
+  </attributes>
+  <conditions>
+    <condition id="id239738" eventType="touch" pluginPredicateTypeIndex="0">
+      <attributes>
+        <index id="conditionType">0</index>
+        <text id="name">default name</text>
+      </attributes>
+      <predicate type="touch" conditionType="released">
+        <attributes />
+      </predicate>
+    </condition>
+    <condition id="id312148" eventType="mouse button" pluginPredicateTypeIndex="0">
+      <attributes>
+        <index id="conditionType">0</index>
+        <text id="name">default name</text>
+      </attributes>
+      <predicate type="mouse" mouseState="up">
+        <attributes />
+      </predicate>
+    </condition>
+  </conditions>
+  <behaviors>
+    <behavior id="id925881" class="ChangeAttributeAction" enabled="true">
+      <attributes>
+        <text id="name">Change Attribute</text>
+        <text id="bundleName">ChangeAttribute.behavior</text>
+        <text id="targetAttribute">game.attributes.id404877</text>
+        <text id="RHS">
+          <expression>
+            <reference keypath="game.attributes.id404877" />
+            <string>+1</string>
+          </expression>
+        </text>
+      </attributes>
+    </behavior>
+    <behavior id="id945467" class="CompoundBehavior" enabled="true">
+      <attributes>
+        <text id="name">Movement with velocity</text>
+        <text id="bundleName">Group.behavior</text>
+      </attributes>
+      <behaviors>
+        <behavior id="id362412" class="RuleBehavior" enabled="true">
+          <attributes>
+            <text id="name">Decide horizontal or vertical movement</text>
+            <text id="bundleName">Rule.behavior</text>
+            <real id="compoundConditionKind">1</real>
+          </attributes>
+          <conditions>
+            <condition id="id483877" eventType="mouse position" pluginPredicateTypeIndex="0">
+              <attributes>
+                <index id="conditionType">1</index>
+                <text id="subjectAttribute">game.attributes.id749353</text>
+                <text id="name">default name</text>
+              </attributes>
+              <predicate type="number">
+                <attributes>
+                  <text id="operator">&gt;=</text>
+                  <real id="RHS">
+                    <expression>
+                      <reference keypath="game.attributes.id401116" />
+                    </expression>
+                  </real>
+                </attributes>
+              </predicate>
+            </condition>
+          </conditions>
+          <behaviors>
+            <behavior id="id521552" class="RuleBehavior" enabled="true">
+              <attributes>
+                <text id="name">Velocity to the right and left</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id631777" eventType="mouse position" pluginPredicateTypeIndex="0">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">game.devices.touches.touch1.x</text>
+                    <text id="name">default name</text>
+                  </attributes>
+                  <predicate type="number">
+                    <attributes>
+                      <text id="operator">&gt;</text>
+                      <real id="RHS">
+                        <expression>
+                          <reference keypath="self.attributes.position.x" />
+                        </expression>
+                      </real>
+                    </attributes>
+                  </predicate>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior id="id189513" class="ChangeVelocityAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Velocity right</text>
+                    <text id="bundleName">ChangeVelocity.behavior</text>
+                    <angle id="direction">0</angle>
+                    <index id="space">1</index>
+                    <real id="speed">150</real>
+                  </attributes>
+                </behavior>
+              </behaviors>
+              <elseBehaviors>
+                <behavior id="id122896" class="RuleBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Velocity to the left</text>
+                    <text id="bundleName">Rule.behavior</text>
+                    <real id="compoundConditionKind">0</real>
+                  </attributes>
+                  <conditions>
+                    <condition id="id639011" eventType="mouse position" pluginPredicateTypeIndex="0">
+                      <attributes>
+                        <index id="conditionType">1</index>
+                        <text id="subjectAttribute">game.devices.touches.touch1.x</text>
+                        <text id="name">default name</text>
+                      </attributes>
+                      <predicate type="number">
+                        <attributes>
+                          <text id="operator">&lt;</text>
+                          <real id="RHS">
+                            <expression>
+                              <reference keypath="self.attributes.position.x" />
+                            </expression>
+                          </real>
+                        </attributes>
+                      </predicate>
+                    </condition>
+                  </conditions>
+                  <behaviors>
+                    <behavior id="id862195" class="ChangeVelocityAction" enabled="true">
+                      <attributes>
+                        <text id="name">Change Velocity</text>
+                        <text id="bundleName">ChangeVelocity.behavior</text>
+                        <angle id="direction">180</angle>
+                        <index id="space">1</index>
+                        <real id="speed">150</real>
+                      </attributes>
+                    </behavior>
+                  </behaviors>
+                  <elseBehaviors />
+                </behavior>
+              </elseBehaviors>
+            </behavior>
+          </behaviors>
+          <elseBehaviors>
+            <behavior id="id802344" class="RuleBehavior" enabled="true">
+              <attributes>
+                <text id="name">Velocity up and down</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id795187" eventType="mouse position" pluginPredicateTypeIndex="0">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">game.devices.touches.touch1.y</text>
+                    <text id="name">default name</text>
+                  </attributes>
+                  <predicate type="number">
+                    <attributes>
+                      <text id="operator">&gt;</text>
+                      <real id="RHS">
+                        <expression>
+                          <reference keypath="self.attributes.position.y" />
+                        </expression>
+                      </real>
+                    </attributes>
+                  </predicate>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior id="id664107" class="ChangeVelocityAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Velocity up</text>
+                    <text id="bundleName">ChangeVelocity.behavior</text>
+                    <angle id="direction">90</angle>
+                    <index id="space">1</index>
+                    <real id="speed">150</real>
+                  </attributes>
+                </behavior>
+              </behaviors>
+              <elseBehaviors>
+                <behavior id="id611443" class="RuleBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Velocity down</text>
+                    <text id="bundleName">Rule.behavior</text>
+                    <real id="compoundConditionKind">0</real>
+                  </attributes>
+                  <conditions>
+                    <condition id="id146779" eventType="mouse position" pluginPredicateTypeIndex="0">
+                      <attributes>
+                        <index id="conditionType">1</index>
+                        <text id="subjectAttribute">game.devices.touches.touch1.y</text>
+                        <text id="name">default name</text>
+                      </attributes>
+                      <predicate type="number">
+                        <attributes>
+                          <text id="operator">&lt;</text>
+                          <real id="RHS">
+                            <expression>
+                              <reference keypath="self.attributes.position.y" />
+                            </expression>
+                          </real>
+                        </attributes>
+                      </predicate>
+                    </condition>
+                  </conditions>
+                  <behaviors>
+                    <behavior id="id740783" class="ChangeVelocityAction" enabled="true">
+                      <attributes>
+                        <text id="name">Change Velocity down</text>
+                        <text id="bundleName">ChangeVelocity.behavior</text>
+                        <angle id="direction">270</angle>
+                        <index id="space">1</index>
+                        <real id="speed">150</real>
+                      </attributes>
+                    </behavior>
+                  </behaviors>
+                  <elseBehaviors />
+                </behavior>
+              </elseBehaviors>
+            </behavior>
+          </elseBehaviors>
+        </behavior>
+      </behaviors>
+    </behavior>
+    <behavior id="id148800" class="RuleBehavior" enabled="true">
+      <attributes>
+        <text id="name">Tell when it's colliding</text>
+        <text id="bundleName">Rule.behavior</text>
+        <real id="compoundConditionKind">0</real>
+      </attributes>
+      <conditions>
+        <condition id="id742807" eventType="overlaps or collides" pluginPredicateTypeIndex="0">
+          <attributes>
+            <index id="conditionType">0</index>
+            <text id="name">default name</text>
+          </attributes>
+          <predicate type="collision">
+            <attributes>
+              <text id="prototypeKey" />
+              <text id="actorTag">Walls</text>
+              <real id="mode">1</real>
+            </attributes>
+          </predicate>
+        </condition>
+      </conditions>
+      <behaviors>
+        <behavior id="id174730" class="ChangeAttributeAction" enabled="true">
+          <attributes>
+            <text id="name">Change Attribute</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">game.attributes.id313581</text>
+            <text id="RHS">true</text>
+          </attributes>
+        </behavior>
+      </behaviors>
+      <elseBehaviors>
+        <behavior id="id609962" class="ChangeAttributeAction" enabled="true">
+          <attributes>
+            <text id="name">Change Attribute</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">game.attributes.id313581</text>
+            <text id="RHS">false</text>
+          </attributes>
+        </behavior>
+      </elseBehaviors>
+    </behavior>
+  </behaviors>
+  <elseBehaviors />
+</behavior>
