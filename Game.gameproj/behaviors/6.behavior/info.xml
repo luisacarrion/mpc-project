@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <info PGFVersion="0.19" GSCVersion="0.10.4">
-  <Interface>ConstrainAttributeBehavior</Interface>
+  <Interface>ChangeAttributeAction</Interface>
   <ControllerClass>GSBehaviorViewController</ControllerClass>
-  <DisplayName>Update block1 x coordinate</DisplayName>
+  <DisplayName>Set block moved as false</DisplayName>
   <DisplayIndex>0</DisplayIndex>
 </info>

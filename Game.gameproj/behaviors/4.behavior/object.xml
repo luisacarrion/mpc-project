@@ -1,13 +1,72 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<behavior id="id509747" class="ConstrainAttributeBehavior" enabled="true" GSCVersion="0.10.4" PGFVersion="0.19">
+<behavior id="id462217" class="RuleBehavior" enabled="true" GSCVersion="0.10.4" PGFVersion="0.19">
   <attributes>
-    <text id="name">Update wizard_body_linear_vy</text>
-    <text id="bundleName">ConstrainAttribute.behavior</text>
-    <text id="targetAttribute">game.attributes.id850041</text>
-    <text id="RHS">
-      <expression>
-        <reference keypath="self.aspects.motion.attributes.linearVelocity.y" />
-      </expression>
-    </text>
+    <text id="name">Control Timer</text>
+    <text id="bundleName">Rule.behavior</text>
+    <real id="compoundConditionKind">0</real>
   </attributes>
+  <conditions>
+    <condition id="id202835" eventType="mouse position" pluginPredicateTypeIndex="0">
+      <attributes>
+        <index id="conditionType">1</index>
+        <text id="subjectAttribute">game.attributes.id941955</text>
+      </attributes>
+      <predicate type="boolean">
+        <attributes>
+          <index id="RHS">1</index>
+        </attributes>
+      </predicate>
+    </condition>
+  </conditions>
+  <behaviors>
+    <behavior id="id281746" class="TimerBehavior" enabled="true">
+      <attributes>
+        <text id="name">Timer</text>
+        <text id="bundleName">Timer.behavior</text>
+        <index id="timerType">0</index>
+        <real id="interval">1</real>
+        <boolean id="runToCompletion">false</boolean>
+      </attributes>
+      <behaviors>
+        <behavior id="id766486" class="RuleBehavior" enabled="true">
+          <attributes>
+            <text id="name">Rule</text>
+            <text id="bundleName">Rule.behavior</text>
+            <real id="compoundConditionKind">0</real>
+          </attributes>
+          <conditions>
+            <condition id="id688008" eventType="mouse position" pluginPredicateTypeIndex="0">
+              <attributes>
+                <index id="conditionType">1</index>
+                <text id="subjectAttribute">game.attributes.id668815</text>
+              </attributes>
+              <predicate type="number">
+                <attributes>
+                  <text id="operator">&gt;</text>
+                  <real id="RHS">0</real>
+                </attributes>
+              </predicate>
+            </condition>
+          </conditions>
+          <behaviors>
+            <behavior id="id342162" class="ChangeAttributeAction" enabled="true">
+              <attributes>
+                <text id="name">Change Attribute</text>
+                <text id="bundleName">ChangeAttribute.behavior</text>
+                <text id="targetAttribute">game.attributes.id668815</text>
+                <text id="RHS">
+                  <expression>
+                    <reference keypath="game.attributes.id668815" />
+                    <string>-1</string>
+                  </expression>
+                </text>
+              </attributes>
+            </behavior>
+          </behaviors>
+          <elseBehaviors />
+        </behavior>
+      </behaviors>
+    </behavior>
+  </behaviors>
+  <elseBehaviors />
 </behavior>
