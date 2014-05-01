@@ -2,6 +2,6 @@
 <info PGFVersion="0.19" GSCVersion="0.10.4">
   <Interface>RuleBehavior</Interface>
   <ControllerClass>GSRuleBehaviorViewController</ControllerClass>
-  <DisplayName>Flip image 2</DisplayName>
+  <DisplayName>Stabilize movement down</DisplayName>
   <DisplayIndex>0</DisplayIndex>
 </info>

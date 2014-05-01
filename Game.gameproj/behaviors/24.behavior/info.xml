@@ -2,6 +2,6 @@
 <info PGFVersion="0.19" GSCVersion="0.10.4">
   <Interface>RuleBehavior</Interface>
   <ControllerClass>GSRuleBehaviorViewController</ControllerClass>
-  <DisplayName>Change direction to the left rule</DisplayName>
+  <DisplayName>Flip image rule</DisplayName>
   <DisplayIndex>0</DisplayIndex>
 </info>

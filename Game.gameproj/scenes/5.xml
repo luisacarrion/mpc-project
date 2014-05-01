@@ -33,12 +33,12 @@
           <attributes>
             <text id="name">Wall copy 11</text>
             <point id="position">
-              <real id="x">165.42578125</real>
-              <real id="y">198.3515625</real>
+              <real id="x">165</real>
+              <real id="y">200</real>
             </point>
             <size id="size">
-              <real id="width">31.0234375</real>
-              <real id="height">107.796875</real>
+              <real id="width">30</real>
+              <real id="height">100</real>
             </size>
             <angle id="rotation">0</angle>
           </attributes>
@@ -59,12 +59,12 @@
           <attributes>
             <text id="name">Wall copy 10</text>
             <point id="position">
-              <real id="x">535.767578125</real>
-              <real id="y">233.79296875</real>
+              <real id="x">540</real>
+              <real id="y">230</real>
             </point>
             <size id="size">
-              <real id="width">54.91796875</real>
-              <real id="height">172.375</real>
+              <real id="width">60</real>
+              <real id="height">170</real>
             </size>
             <angle id="rotation">0</angle>
           </attributes>
@@ -111,12 +111,12 @@
           <attributes>
             <text id="name">Wall copy 8</text>
             <point id="position">
-              <real id="x">489.28515625</real>
-              <real id="y">92.98828125</real>
+              <real id="x">490</real>
+              <real id="y">95</real>
             </point>
             <size id="size">
-              <real id="width">53.3046875</real>
-              <real id="height">110.84375</real>
+              <real id="width">50</real>
+              <real id="height">110</real>
             </size>
             <angle id="rotation">0</angle>
           </attributes>
@@ -137,12 +137,12 @@
           <attributes>
             <text id="name">Wall copy 7</text>
             <point id="position">
-              <real id="x">381.95703125</real>
-              <real id="y">123.6015625</real>
+              <real id="x">380</real>
+              <real id="y">125</real>
             </point>
             <size id="size">
-              <real id="width">47.609375</real>
-              <real id="height">51.265625</real>
+              <real id="width">50</real>
+              <real id="height">50</real>
             </size>
             <angle id="rotation">0</angle>
           </attributes>
@@ -163,12 +163,12 @@
           <attributes>
             <text id="name">Wall copy 6</text>
             <point id="position">
-              <real id="x">412.16015625</real>
-              <real id="y">19.873046875</real>
+              <real id="x">410</real>
+              <real id="y">20</real>
             </point>
             <size id="size">
               <real id="width">120</real>
-              <real id="height">34.94921875</real>
+              <real id="height">35</real>
             </size>
             <angle id="rotation">0</angle>
           </attributes>
@@ -189,12 +189,12 @@
           <attributes>
             <text id="name">Wall copy 5</text>
             <point id="position">
-              <real id="x">144.1484375</real>
-              <real id="y">18.455078125</real>
+              <real id="x">145</real>
+              <real id="y">20</real>
             </point>
             <size id="size">
-              <real id="width">205.4765625</real>
-              <real id="height">40.25390625</real>
+              <real id="width">205</real>
+              <real id="height">40</real>
             </size>
             <angle id="rotation">0</angle>
             <image id="image" />
@@ -216,12 +216,12 @@
           <attributes>
             <text id="name">Wall copy 4</text>
             <point id="position">
-              <real id="x">203.296875</real>
-              <real id="y">113.833984375</real>
+              <real id="x">200</real>
+              <real id="y">115</real>
             </point>
             <size id="size">
-              <real id="width">83.25</real>
-              <real id="height">32.55859375</real>
+              <real id="width">90</real>
+              <real id="height">30</real>
             </size>
             <angle id="rotation">0</angle>
           </attributes>
@@ -242,12 +242,12 @@
           <attributes>
             <text id="name">Wall copy 3</text>
             <point id="position">
-              <real id="x">75.462890625</real>
-              <real id="y">229.412109375</real>
+              <real id="x">75</real>
+              <real id="y">230</real>
             </point>
             <size id="size">
-              <real id="width">32.28515625</real>
-              <real id="height">40.83203125</real>
+              <real id="width">30</real>
+              <real id="height">40</real>
             </size>
             <angle id="rotation">0</angle>
           </attributes>
@@ -268,12 +268,12 @@
           <attributes>
             <text id="name">Wall copy 2</text>
             <point id="position">
-              <real id="x">23.06640625</real>
-              <real id="y">74.072265625</real>
+              <real id="x">20</real>
+              <real id="y">75</real>
             </point>
             <size id="size">
-              <real id="width">44.7578125</real>
-              <real id="height">148.01953125</real>
+              <real id="width">45</real>
+              <real id="height">145</real>
             </size>
             <angle id="rotation">0</angle>
           </attributes>
@@ -294,12 +294,12 @@
           <attributes>
             <text id="name">Wall copy 1</text>
             <point id="position">
-              <real id="x">130.4375</real>
-              <real id="y">123.59375</real>
+              <real id="x">130</real>
+              <real id="y">125</real>
             </point>
             <size id="size">
-              <real id="width">48.3828125</real>
-              <real id="height">52.8515625</real>
+              <real id="width">50</real>
+              <real id="height">50</real>
             </size>
             <angle id="rotation">0</angle>
           </attributes>
@@ -1554,7 +1554,7 @@
               </behaviors>
               <elseBehaviors />
             </behavior>
-            <behavior id="id989806" class="RuleBehavior" enabled="true">
+            <behavior id="id989806" class="RuleBehavior" enabled="false">
               <attributes>
                 <text id="name">Flip image</text>
                 <text id="bundleName">Rule.behavior</text>
@@ -1594,6 +1594,110 @@
                   </attributes>
                 </behavior>
               </elseBehaviors>
+            </behavior>
+            <behavior id="id760726" class="CompoundBehavior" enabled="true">
+              <attributes>
+                <text id="name">Change direction</text>
+                <text id="bundleName">Group.behavior</text>
+              </attributes>
+              <behaviors>
+                <behavior id="id161073" class="RuleBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Rule to the right</text>
+                    <text id="bundleName">Rule.behavior</text>
+                    <real id="compoundConditionKind">0</real>
+                  </attributes>
+                  <conditions>
+                    <condition id="id868785" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                      <attributes>
+                        <index id="conditionType">1</index>
+                        <text id="subjectAttribute">self.attributes.position.x</text>
+                        <text id="name">default name</text>
+                      </attributes>
+                      <predicate type="number">
+                        <attributes>
+                          <text id="operator">=</text>
+                          <real id="RHS">210</real>
+                        </attributes>
+                      </predicate>
+                    </condition>
+                  </conditions>
+                  <behaviors>
+                    <behavior id="id370405" class="ChangeAttributeAction" enabled="true">
+                      <attributes>
+                        <text id="name">Change Attribute</text>
+                        <text id="bundleName">ChangeAttribute.behavior</text>
+                        <text id="targetAttribute">scene.attributes.id960356</text>
+                        <text id="RHS">false</text>
+                      </attributes>
+                    </behavior>
+                    <behavior id="id326068" class="ChangeAttributeAction" enabled="true">
+                      <attributes>
+                        <text id="name">Change Attribute</text>
+                        <text id="bundleName">ChangeAttribute.behavior</text>
+                        <text id="targetAttribute">self.aspects.graphics.attributes.flipHorizontally</text>
+                        <text id="RHS">true</text>
+                      </attributes>
+                    </behavior>
+                    <behavior id="id643554" class="ChangeAttributeAction" enabled="true">
+                      <attributes>
+                        <text id="name">Change Attribute</text>
+                        <text id="bundleName">ChangeAttribute.behavior</text>
+                        <text id="targetAttribute">scene.attributes.id407897</text>
+                        <text id="RHS">true</text>
+                      </attributes>
+                    </behavior>
+                  </behaviors>
+                </behavior>
+                <behavior id="id991485" class="RuleBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Rule to the left</text>
+                    <text id="bundleName">Rule.behavior</text>
+                    <real id="compoundConditionKind">0</real>
+                  </attributes>
+                  <conditions>
+                    <condition id="id936570" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                      <attributes>
+                        <index id="conditionType">1</index>
+                        <text id="subjectAttribute">self.attributes.position.x</text>
+                        <text id="name">default name</text>
+                      </attributes>
+                      <predicate type="number">
+                        <attributes>
+                          <text id="operator">=</text>
+                          <real id="RHS">300</real>
+                        </attributes>
+                      </predicate>
+                    </condition>
+                  </conditions>
+                  <behaviors>
+                    <behavior id="id614867" class="ChangeAttributeAction" enabled="true">
+                      <attributes>
+                        <text id="name">Change Attribute</text>
+                        <text id="bundleName">ChangeAttribute.behavior</text>
+                        <text id="targetAttribute">scene.attributes.id960356</text>
+                        <text id="RHS">true</text>
+                      </attributes>
+                    </behavior>
+                    <behavior id="id155040" class="ChangeAttributeAction" enabled="true">
+                      <attributes>
+                        <text id="name">Change Attribute</text>
+                        <text id="bundleName">ChangeAttribute.behavior</text>
+                        <text id="targetAttribute">self.aspects.graphics.attributes.flipHorizontally</text>
+                        <text id="RHS">false</text>
+                      </attributes>
+                    </behavior>
+                    <behavior id="id285571" class="ChangeAttributeAction" enabled="true">
+                      <attributes>
+                        <text id="name">Change Attribute</text>
+                        <text id="bundleName">ChangeAttribute.behavior</text>
+                        <text id="targetAttribute">scene.attributes.id407897</text>
+                        <text id="RHS">true</text>
+                      </attributes>
+                    </behavior>
+                  </behaviors>
+                </behavior>
+              </behaviors>
             </behavior>
             <behavior id="id838808" class="RuleBehavior" enabled="true">
               <attributes>
@@ -1661,13 +1765,25 @@
                       <predicate type="number">
                         <attributes>
                           <text id="operator">&lt;</text>
-                          <real id="RHS">480</real>
+                          <real id="RHS">300</real>
+                        </attributes>
+                      </predicate>
+                    </condition>
+                    <condition id="id683456" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                      <attributes>
+                        <index id="conditionType">1</index>
+                        <text id="subjectAttribute">scene.attributes.id407897</text>
+                        <text id="name">default name</text>
+                      </attributes>
+                      <predicate type="boolean">
+                        <attributes>
+                          <index id="RHS">0</index>
                         </attributes>
                       </predicate>
                     </condition>
                   </conditions>
                   <behaviors>
-                    <behavior id="id182148" class="RuleBehavior" enabled="true">
+                    <behavior id="id182148" class="RuleBehavior" enabled="false">
                       <attributes>
                         <text id="name">Flip image 2</text>
                         <text id="bundleName">Rule.behavior</text>
@@ -1732,7 +1848,7 @@
                         <text id="bundleName">MoveTo.behavior</text>
                         <boolean id="runToCompletion">false</boolean>
                         <point id="position">
-                          <real id="x">480</real>
+                          <real id="x">300</real>
                           <real id="y">
                             <expression>
                               <reference keypath="self.attributes.position.y" />
@@ -1773,7 +1889,19 @@
                           <predicate type="number">
                             <attributes>
                               <text id="operator">&gt;</text>
-                              <real id="RHS">390</real>
+                              <real id="RHS">210</real>
+                            </attributes>
+                          </predicate>
+                        </condition>
+                        <condition id="id887407" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                          <attributes>
+                            <index id="conditionType">1</index>
+                            <text id="subjectAttribute">scene.attributes.id407897</text>
+                            <text id="name">default name</text>
+                          </attributes>
+                          <predicate type="boolean">
+                            <attributes>
+                              <index id="RHS">0</index>
                             </attributes>
                           </predicate>
                         </condition>
@@ -1783,9 +1911,9 @@
                           <attributes>
                             <text id="name">Move To</text>
                             <text id="bundleName">MoveTo.behavior</text>
-                            <boolean id="runToCompletion">true</boolean>
+                            <boolean id="runToCompletion">false</boolean>
                             <point id="position">
-                              <real id="x">390</real>
+                              <real id="x">210</real>
                               <real id="y">
                                 <expression>
                                   <reference keypath="self.attributes.position.y" />
@@ -1832,7 +1960,7 @@
                 </behavior>
               </behaviors>
               <elseBehaviors>
-                <behavior id="id376673" class="ChangeAttributeAction" enabled="false">
+                <behavior id="id376673" class="ChangeAttributeAction" enabled="true">
                   <attributes>
                     <text id="name">Set block moved as false</text>
                     <text id="bundleName">ChangeAttribute.behavior</text>
@@ -1956,7 +2084,7 @@
                     <text id="RHS">true</text>
                   </attributes>
                 </behavior>
-                <behavior id="id380952" class="ChangeAttributeAction" enabled="false">
+                <behavior id="id380952" class="ChangeAttributeAction" enabled="true">
                   <attributes>
                     <text id="name">Set block moved as true</text>
                     <text id="bundleName">ChangeAttribute.behavior</text>
@@ -2023,7 +2151,7 @@
                     <text id="RHS">false</text>
                   </attributes>
                 </behavior>
-                <behavior id="id303702" class="ChangeAttributeAction" enabled="false">
+                <behavior id="id303702" class="ChangeAttributeAction" enabled="true">
                   <attributes>
                     <text id="name">Set block_moved as true</text>
                     <text id="bundleName">ChangeAttribute.behavior</text>
@@ -2104,6 +2232,18 @@
                         </attributes>
                       </predicate>
                     </condition>
+                    <condition id="id518224" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                      <attributes>
+                        <index id="conditionType">1</index>
+                        <text id="subjectAttribute">scene.attributes.id407897</text>
+                        <text id="name">default name</text>
+                      </attributes>
+                      <predicate type="boolean">
+                        <attributes>
+                          <index id="RHS">0</index>
+                        </attributes>
+                      </predicate>
+                    </condition>
                   </conditions>
                   <behaviors>
                     <behavior id="id254405" class="MoveToBehavior" enabled="true">
@@ -2154,6 +2294,18 @@
                             <attributes>
                               <text id="operator">&lt;=</text>
                               <real id="RHS">480</real>
+                            </attributes>
+                          </predicate>
+                        </condition>
+                        <condition id="id205466" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                          <attributes>
+                            <index id="conditionType">1</index>
+                            <text id="subjectAttribute">scene.attributes.id407897</text>
+                            <text id="name">default name</text>
+                          </attributes>
+                          <predicate type="boolean">
+                            <attributes>
+                              <index id="RHS">0</index>
                             </attributes>
                           </predicate>
                         </condition>
@@ -2212,7 +2364,7 @@
                 </behavior>
               </behaviors>
               <elseBehaviors>
-                <behavior id="id376673" class="ChangeAttributeAction" enabled="false">
+                <behavior id="id376673" class="ChangeAttributeAction" enabled="true">
                   <attributes>
                     <text id="name">Set block moved as false</text>
                     <text id="bundleName">ChangeAttribute.behavior</text>
@@ -3434,6 +3586,586 @@
     </layer>
     <layer id="id370550">
       <actors>
+        <actor id="id748561" prototype="id795914">
+          <attributes>
+            <text id="name">Wall copy 3 Copy 1</text>
+            <point id="position">
+              <real id="x">345</real>
+              <real id="y">280</real>
+            </point>
+            <size id="size">
+              <real id="width">30</real>
+              <real id="height">60</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id618799" prototype="id795914">
+          <attributes>
+            <text id="name">Wall copy 2 Copy 1</text>
+            <point id="position">
+              <real id="x">210</real>
+              <real id="y">280</real>
+            </point>
+            <size id="size">
+              <real id="width">120</real>
+              <real id="height">60</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id970395" prototype="id795914">
+          <attributes>
+            <text id="name">block1_right_wall Copy 12</text>
+            <point id="position">
+              <real id="x">195</real>
+              <real id="y">220</real>
+            </point>
+            <size id="size">
+              <real id="width">30</real>
+              <real id="height">60</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <behaviors>
+            <behavior id="id286062" class="CompoundBehavior" enabled="true">
+              <attributes>
+                <text id="name">Move in x with block top left</text>
+                <text id="bundleName">Group.behavior</text>
+              </attributes>
+              <behaviors>
+                <behavior id="id385898" class="ConstrainAttributeBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Constrain Attribute</text>
+                    <text id="bundleName">ConstrainAttribute.behavior</text>
+                    <text id="targetAttribute">self.attributes.position.x</text>
+                    <text id="RHS">
+                      <expression>
+                        <reference keypath="game.attributes.id862427" />
+                        <string>-105</string>
+                      </expression>
+                    </text>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+            <behavior id="id123428" class="RuleBehavior" enabled="true">
+              <attributes>
+                <text id="name">Rule</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id321477" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.position.x</text>
+                    <text id="name">default name</text>
+                  </attributes>
+                  <predicate type="number">
+                    <attributes>
+                      <text id="operator">&lt;</text>
+                      <real id="RHS">165</real>
+                    </attributes>
+                  </predicate>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior id="id141438" class="ConstrainAttributeBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Constrain Attribute</text>
+                    <text id="bundleName">ConstrainAttribute.behavior</text>
+                    <text id="targetAttribute">self.attributes.position.x</text>
+                    <text id="RHS">165</text>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+          </behaviors>
+          <aspects>
+            <graphics>
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+                <boolean id="visible">false</boolean>
+              </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id387142" prototype="id795914">
+          <attributes>
+            <text id="name">block1_right_wall Copy 11</text>
+            <point id="position">
+              <real id="x">225</real>
+              <real id="y">220</real>
+            </point>
+            <size id="size">
+              <real id="width">30</real>
+              <real id="height">60</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <behaviors>
+            <behavior id="id326917" class="CompoundBehavior" enabled="true">
+              <attributes>
+                <text id="name">Move in x with block top left</text>
+                <text id="bundleName">Group.behavior</text>
+              </attributes>
+              <behaviors>
+                <behavior id="id815735" class="ConstrainAttributeBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Constrain Attribute</text>
+                    <text id="bundleName">ConstrainAttribute.behavior</text>
+                    <text id="targetAttribute">self.attributes.position.x</text>
+                    <text id="RHS">
+                      <expression>
+                        <reference keypath="game.attributes.id862427" />
+                        <string>-75</string>
+                      </expression>
+                    </text>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+            <behavior id="id272081" class="RuleBehavior" enabled="true">
+              <attributes>
+                <text id="name">Rule</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id107352" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.position.x</text>
+                    <text id="name">default name</text>
+                  </attributes>
+                  <predicate type="number">
+                    <attributes>
+                      <text id="operator">&lt;</text>
+                      <real id="RHS">165</real>
+                    </attributes>
+                  </predicate>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior id="id910282" class="ConstrainAttributeBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Constrain Attribute</text>
+                    <text id="bundleName">ConstrainAttribute.behavior</text>
+                    <text id="targetAttribute">self.attributes.position.x</text>
+                    <text id="RHS">165</text>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+          </behaviors>
+          <aspects>
+            <graphics>
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+                <boolean id="visible">false</boolean>
+              </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id610515" prototype="id795914">
+          <attributes>
+            <text id="name">block1_right_wall Copy 10</text>
+            <point id="position">
+              <real id="x">255</real>
+              <real id="y">220</real>
+            </point>
+            <size id="size">
+              <real id="width">30</real>
+              <real id="height">60</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <behaviors>
+            <behavior id="id340946" class="CompoundBehavior" enabled="true">
+              <attributes>
+                <text id="name">Move in x with block top left</text>
+                <text id="bundleName">Group.behavior</text>
+              </attributes>
+              <behaviors>
+                <behavior id="id365335" class="ConstrainAttributeBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Constrain Attribute</text>
+                    <text id="bundleName">ConstrainAttribute.behavior</text>
+                    <text id="targetAttribute">self.attributes.position.x</text>
+                    <text id="RHS">
+                      <expression>
+                        <reference keypath="game.attributes.id862427" />
+                        <string>-45</string>
+                      </expression>
+                    </text>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+          </behaviors>
+          <aspects>
+            <graphics>
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+                <boolean id="visible">false</boolean>
+              </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id467600" prototype="id795914">
+          <attributes>
+            <text id="name">block1_right_wall Copy 9</text>
+            <point id="position">
+              <real id="x">345</real>
+              <real id="y">220</real>
+            </point>
+            <size id="size">
+              <real id="width">30</real>
+              <real id="height">60</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <behaviors>
+            <behavior id="id566976" class="CompoundBehavior" enabled="true">
+              <attributes>
+                <text id="name">Move in x with block top left</text>
+                <text id="bundleName">Group.behavior</text>
+              </attributes>
+              <behaviors>
+                <behavior id="id349328" class="ConstrainAttributeBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Constrain Attribute</text>
+                    <text id="bundleName">ConstrainAttribute.behavior</text>
+                    <text id="targetAttribute">self.attributes.position.x</text>
+                    <text id="RHS">
+                      <expression>
+                        <reference keypath="game.attributes.id862427" />
+                        <string>+45</string>
+                      </expression>
+                    </text>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+          </behaviors>
+          <aspects>
+            <graphics>
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+                <boolean id="visible">false</boolean>
+              </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id720772" prototype="id795914">
+          <attributes>
+            <text id="name">block1_right_wall Copy 8</text>
+            <point id="position">
+              <real id="x">555</real>
+              <real id="y">280</real>
+            </point>
+            <size id="size">
+              <real id="width">90</real>
+              <real id="height">60</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <behaviors>
+            <behavior id="id493935" class="CompoundBehavior" enabled="true">
+              <attributes>
+                <text id="name">Move in x with block top left</text>
+                <text id="bundleName">Group.behavior</text>
+              </attributes>
+              <behaviors>
+                <behavior id="id316906" class="ConstrainAttributeBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Constrain Attribute</text>
+                    <text id="bundleName">ConstrainAttribute.behavior</text>
+                    <text id="targetAttribute">self.attributes.position.x</text>
+                    <text id="RHS">
+                      <expression>
+                        <reference keypath="scene.attributes.id768327" />
+                        <string>+75</string>
+                      </expression>
+                    </text>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+          </behaviors>
+          <aspects>
+            <graphics>
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+                <boolean id="visible">false</boolean>
+              </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id904522" prototype="id795914">
+          <attributes>
+            <text id="name">block1_right_wall Copy 7</text>
+            <point id="position">
+              <real id="x">375</real>
+              <real id="y">280</real>
+            </point>
+            <size id="size">
+              <real id="width">30</real>
+              <real id="height">60</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <behaviors>
+            <behavior id="id159249" class="CompoundBehavior" enabled="true">
+              <attributes>
+                <text id="name">Move in x with block top left</text>
+                <text id="bundleName">Group.behavior</text>
+              </attributes>
+              <behaviors>
+                <behavior id="id839711" class="ConstrainAttributeBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Constrain Attribute</text>
+                    <text id="bundleName">ConstrainAttribute.behavior</text>
+                    <text id="targetAttribute">self.attributes.position.x</text>
+                    <text id="RHS">
+                      <expression>
+                        <reference keypath="scene.attributes.id768327" />
+                        <string>-105</string>
+                      </expression>
+                    </text>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+            <behavior id="id888455" class="RuleBehavior" enabled="true">
+              <attributes>
+                <text id="name">Rule</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id583850" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.position.x</text>
+                    <text id="name">default name</text>
+                  </attributes>
+                  <predicate type="number">
+                    <attributes>
+                      <text id="operator">&lt;</text>
+                      <real id="RHS">345</real>
+                    </attributes>
+                  </predicate>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior id="id132223" class="ConstrainAttributeBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Constrain Attribute</text>
+                    <text id="bundleName">ConstrainAttribute.behavior</text>
+                    <text id="targetAttribute">self.attributes.position.x</text>
+                    <text id="RHS">345</text>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+          </behaviors>
+          <aspects>
+            <graphics>
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+                <boolean id="visible">false</boolean>
+              </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id597546" prototype="id795914">
+          <attributes>
+            <text id="name">block1_right_wall Copy 6</text>
+            <point id="position">
+              <real id="x">405</real>
+              <real id="y">280</real>
+            </point>
+            <size id="size">
+              <real id="width">30</real>
+              <real id="height">60</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <behaviors>
+            <behavior id="id575026" class="CompoundBehavior" enabled="true">
+              <attributes>
+                <text id="name">Move in x with block top left</text>
+                <text id="bundleName">Group.behavior</text>
+              </attributes>
+              <behaviors>
+                <behavior id="id371288" class="ConstrainAttributeBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Constrain Attribute</text>
+                    <text id="bundleName">ConstrainAttribute.behavior</text>
+                    <text id="targetAttribute">self.attributes.position.x</text>
+                    <text id="RHS">
+                      <expression>
+                        <reference keypath="scene.attributes.id768327" />
+                        <string>-75</string>
+                      </expression>
+                    </text>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+            <behavior id="id220929" class="RuleBehavior" enabled="true">
+              <attributes>
+                <text id="name">Rule</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id469727" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.position.x</text>
+                    <text id="name">default name</text>
+                  </attributes>
+                  <predicate type="number">
+                    <attributes>
+                      <text id="operator">&lt;</text>
+                      <real id="RHS">345</real>
+                    </attributes>
+                  </predicate>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior id="id205609" class="ConstrainAttributeBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Constrain Attribute</text>
+                    <text id="bundleName">ConstrainAttribute.behavior</text>
+                    <text id="targetAttribute">self.attributes.position.x</text>
+                    <text id="RHS">345</text>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+          </behaviors>
+          <aspects>
+            <graphics>
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+                <boolean id="visible">false</boolean>
+              </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id709357" prototype="id795914">
+          <attributes>
+            <text id="name">block1_right_wall Copy 5</text>
+            <point id="position">
+              <real id="x">435</real>
+              <real id="y">280</real>
+            </point>
+            <size id="size">
+              <real id="width">30</real>
+              <real id="height">60</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <behaviors>
+            <behavior id="id730252" class="CompoundBehavior" enabled="true">
+              <attributes>
+                <text id="name">Move in x with block top left</text>
+                <text id="bundleName">Group.behavior</text>
+              </attributes>
+              <behaviors>
+                <behavior id="id876590" class="ConstrainAttributeBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Constrain Attribute</text>
+                    <text id="bundleName">ConstrainAttribute.behavior</text>
+                    <text id="targetAttribute">self.attributes.position.x</text>
+                    <text id="RHS">
+                      <expression>
+                        <reference keypath="scene.attributes.id768327" />
+                        <string>-45</string>
+                      </expression>
+                    </text>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+          </behaviors>
+          <aspects>
+            <graphics>
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+                <boolean id="visible">false</boolean>
+              </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
         <actor id="id485620" prototype="id795914">
           <attributes>
             <text id="name">block1_right_wall Copy 4</text>
@@ -3507,7 +4239,7 @@
               <attributes>
                 <integer id="tileWidth" name="tileWidth">0</integer>
                 <integer id="tileHeight" name="tileHeight">0</integer>
-                <boolean id="visible">true</boolean>
+                <boolean id="visible">false</boolean>
               </attributes>
             </graphics>
             <motion />
@@ -3589,7 +4321,7 @@
               <attributes>
                 <integer id="tileWidth" name="tileWidth">0</integer>
                 <integer id="tileHeight" name="tileHeight">0</integer>
-                <boolean id="visible">true</boolean>
+                <boolean id="visible">false</boolean>
               </attributes>
             </graphics>
             <motion />
@@ -3639,7 +4371,7 @@
               <attributes>
                 <integer id="tileWidth" name="tileWidth">0</integer>
                 <integer id="tileHeight" name="tileHeight">0</integer>
-                <boolean id="visible">true</boolean>
+                <boolean id="visible">false</boolean>
               </attributes>
             </graphics>
             <motion />
@@ -3689,7 +4421,7 @@
               <attributes>
                 <integer id="tileWidth" name="tileWidth">0</integer>
                 <integer id="tileHeight" name="tileHeight">0</integer>
-                <boolean id="visible">true</boolean>
+                <boolean id="visible">false</boolean>
               </attributes>
             </graphics>
             <motion />
