@@ -1,167 +1,59 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<behavior id="id622794" class="RuleBehavior" enabled="true" GSCVersion="0.10.4" PGFVersion="0.19">
+<behavior id="id674711" class="RuleBehavior" enabled="true" GSCVersion="0.10.4" PGFVersion="0.19">
   <attributes>
-    <text id="name">Start block movement</text>
+    <text id="name">Flip image</text>
     <text id="bundleName">Rule.behavior</text>
     <real id="compoundConditionKind">0</real>
   </attributes>
   <conditions>
-    <condition id="id866662" eventType="overlaps or collides" pluginPredicateTypeIndex="0">
+    <condition id="id718662" eventType="mouse position" pluginPredicateTypeIndex="0">
       <attributes>
-        <index id="conditionType">0</index>
+        <index id="conditionType">1</index>
+        <text id="subjectAttribute">scene.attributes.id757494</text>
         <text id="name">default name</text>
       </attributes>
-      <predicate type="collision">
+      <predicate type="boolean">
         <attributes>
-          <text id="prototypeKey">id497335</text>
-          <text id="actorTag" />
-          <real id="mode">0</real>
+          <index id="RHS">1</index>
         </attributes>
       </predicate>
     </condition>
   </conditions>
   <behaviors>
-    <behavior id="id237045" class="RuleBehavior" enabled="true">
+    <behavior id="id363245" class="ChangeAttributeAction" enabled="true">
       <attributes>
-        <text id="name">Move to the right rule</text>
-        <text id="bundleName">Rule.behavior</text>
-        <real id="compoundConditionKind">0</real>
+        <text id="name">Change Attribute</text>
+        <text id="bundleName">ChangeAttribute.behavior</text>
+        <text id="targetAttribute">self.aspects.graphics.attributes.flipHorizontally</text>
+        <text id="RHS">false</text>
       </attributes>
-      <conditions>
-        <condition id="id269024" eventType="mouse position" pluginPredicateTypeIndex="0">
-          <attributes>
-            <index id="conditionType">1</index>
-            <text id="subjectAttribute">scene.attributes.id572829</text>
-            <text id="name">default name</text>
-          </attributes>
-          <predicate type="boolean">
-            <attributes>
-              <index id="RHS">1</index>
-            </attributes>
-          </predicate>
-        </condition>
-        <condition id="id965109" eventType="mouse position" pluginPredicateTypeIndex="0">
-          <attributes>
-            <index id="conditionType">1</index>
-            <text id="subjectAttribute">self.attributes.position.x</text>
-            <text id="name">default name</text>
-          </attributes>
-          <predicate type="number">
-            <attributes>
-              <text id="operator">&lt;</text>
-              <real id="RHS">120</real>
-            </attributes>
-          </predicate>
-        </condition>
-        <condition id="id661565" eventType="mouse position" pluginPredicateTypeIndex="0">
-          <attributes>
-            <index id="conditionType">1</index>
-            <text id="subjectAttribute">scene.attributes.id692918</text>
-            <text id="name">default name</text>
-          </attributes>
-          <predicate type="boolean">
-            <attributes>
-              <index id="RHS">0</index>
-            </attributes>
-          </predicate>
-        </condition>
-      </conditions>
-      <behaviors>
-        <behavior id="id254405" class="MoveToBehavior" enabled="true">
-          <attributes>
-            <text id="name">Move To</text>
-            <text id="bundleName">MoveTo.behavior</text>
-            <boolean id="runToCompletion">false</boolean>
-            <point id="position">
-              <real id="x">120</real>
-              <real id="y">
-                <expression>
-                  <reference keypath="self.attributes.position.y" />
-                </expression>
-              </real>
-            </point>
-            <index id="space">1</index>
-            <real id="speed">150</real>
-          </attributes>
-        </behavior>
-      </behaviors>
-      <elseBehaviors>
-        <behavior id="id691188" class="RuleBehavior" enabled="true">
-          <attributes>
-            <text id="name">Move to the left rule</text>
-            <text id="bundleName">Rule.behavior</text>
-            <real id="compoundConditionKind">0</real>
-          </attributes>
-          <conditions>
-            <condition id="id731163" eventType="mouse position" pluginPredicateTypeIndex="0">
-              <attributes>
-                <index id="conditionType">1</index>
-                <text id="subjectAttribute">scene.attributes.id572829</text>
-                <text id="name">default name</text>
-              </attributes>
-              <predicate type="boolean">
-                <attributes>
-                  <index id="RHS">0</index>
-                </attributes>
-              </predicate>
-            </condition>
-            <condition id="id365147" eventType="mouse position" pluginPredicateTypeIndex="0">
-              <attributes>
-                <index id="conditionType">1</index>
-                <text id="subjectAttribute">self.attributes.position.x</text>
-                <text id="name">default name</text>
-              </attributes>
-              <predicate type="number">
-                <attributes>
-                  <text id="operator">&gt;</text>
-                  <real id="RHS">30</real>
-                </attributes>
-              </predicate>
-            </condition>
-            <condition id="id322654" eventType="mouse position" pluginPredicateTypeIndex="0">
-              <attributes>
-                <index id="conditionType">1</index>
-                <text id="subjectAttribute">scene.attributes.id692918</text>
-                <text id="name">default name</text>
-              </attributes>
-              <predicate type="boolean">
-                <attributes>
-                  <index id="RHS">0</index>
-                </attributes>
-              </predicate>
-            </condition>
-          </conditions>
-          <behaviors>
-            <behavior id="id316581" class="MoveToBehavior" enabled="true">
-              <attributes>
-                <text id="name">Move To</text>
-                <text id="bundleName">MoveTo.behavior</text>
-                <boolean id="runToCompletion">false</boolean>
-                <point id="position">
-                  <real id="x">30</real>
-                  <real id="y">
-                    <expression>
-                      <reference keypath="self.attributes.position.y" />
-                    </expression>
-                  </real>
-                </point>
-                <index id="space">1</index>
-                <real id="speed">150</real>
-              </attributes>
-            </behavior>
-          </behaviors>
-          <elseBehaviors />
-        </behavior>
-      </elseBehaviors>
     </behavior>
   </behaviors>
   <elseBehaviors>
-    <behavior id="id376673" class="ChangeAttributeAction" enabled="true">
+    <behavior id="id539410" class="ChangeAttributeAction" enabled="true">
       <attributes>
-        <text id="name">Set block moved as false</text>
+        <text id="name">Change Attribute</text>
         <text id="bundleName">ChangeAttribute.behavior</text>
-        <text id="targetAttribute">scene.attributes.id692918</text>
-        <text id="RHS">false</text>
+        <text id="targetAttribute">self.aspects.graphics.attributes.flipHorizontally</text>
+        <text id="RHS">true</text>
+      </attributes>
+    </behavior>
+    <behavior id="id913350" class="LogDebuggingStatementAction" enabled="true">
+      <attributes>
+        <text id="name">Log Debugging Statement</text>
+        <text id="bundleName">LogDebuggingStatement.behavior</text>
+        <text id="text">Value of constr_att after flipping</text>
+      </attributes>
+    </behavior>
+    <behavior id="id549243" class="LogDebuggingStatementAction" enabled="true">
+      <attributes>
+        <text id="name">Log Debugging Statement</text>
+        <text id="bundleName">LogDebuggingStatement.behavior</text>
+        <text id="text">
+          <expression>
+            <reference keypath="scene.attributes.id899506" />
+          </expression>
+        </text>
       </attributes>
     </behavior>
   </elseBehaviors>

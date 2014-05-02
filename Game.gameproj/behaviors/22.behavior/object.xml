@@ -1,9 +1,63 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<behavior id="id376673" class="ChangeAttributeAction" enabled="true" GSCVersion="0.10.4" PGFVersion="0.19">
+<behavior id="id354459" class="RuleBehavior" enabled="true" GSCVersion="0.10.4" PGFVersion="0.19">
   <attributes>
-    <text id="name">Set block moved as false</text>
-    <text id="bundleName">ChangeAttribute.behavior</text>
-    <text id="targetAttribute">scene.attributes.id407897</text>
-    <text id="RHS">false</text>
+    <text id="name">Stabilize movement to the right</text>
+    <text id="bundleName">Rule.behavior</text>
+    <real id="compoundConditionKind">0</real>
   </attributes>
+  <conditions>
+    <condition id="id885643" eventType="mouse position" pluginPredicateTypeIndex="0">
+      <attributes>
+        <index id="conditionType">1</index>
+        <text id="subjectAttribute">self.aspects.motion.attributes.linearVelocity.x</text>
+        <text id="name">default name</text>
+      </attributes>
+      <predicate type="number">
+        <attributes>
+          <text id="operator">&gt;</text>
+          <real id="RHS">0</real>
+        </attributes>
+      </predicate>
+    </condition>
+    <condition id="id200142" eventType="mouse position" pluginPredicateTypeIndex="0">
+      <attributes>
+        <index id="conditionType">1</index>
+        <text id="subjectAttribute">self.attributes.position.x</text>
+        <text id="name">default name</text>
+      </attributes>
+      <predicate type="number">
+        <attributes>
+          <text id="operator">&gt;=</text>
+          <real id="RHS">
+            <expression>
+              <reference keypath="game.devices.touches.touch1.x" />
+            </expression>
+          </real>
+        </attributes>
+      </predicate>
+    </condition>
+  </conditions>
+  <behaviors>
+    <behavior id="id111573" class="ConstrainAttributeBehavior" enabled="true">
+      <attributes>
+        <text id="name">Constrain Attribute</text>
+        <text id="bundleName">ConstrainAttribute.behavior</text>
+        <text id="targetAttribute">game.devices.touches.touch1.x</text>
+        <text id="RHS">
+          <expression>
+            <reference keypath="self.attributes.position.x" />
+          </expression>
+        </text>
+      </attributes>
+    </behavior>
+    <behavior id="id648597" class="ConstrainAttributeBehavior" enabled="true">
+      <attributes>
+        <text id="name">Constrain Attribute</text>
+        <text id="bundleName">ConstrainAttribute.behavior</text>
+        <text id="targetAttribute">self.aspects.motion.attributes.linearVelocity.x</text>
+        <text id="RHS">0</text>
+      </attributes>
+    </behavior>
+  </behaviors>
+  <elseBehaviors />
 </behavior>

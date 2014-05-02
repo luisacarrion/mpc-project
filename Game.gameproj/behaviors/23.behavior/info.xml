@@ -2,6 +2,6 @@
 <info PGFVersion="0.19" GSCVersion="0.10.4">
   <Interface>RuleBehavior</Interface>
   <ControllerClass>GSRuleBehaviorViewController</ControllerClass>
-  <DisplayName>Start block movement 2</DisplayName>
+  <DisplayName>Stabilize movement to the left</DisplayName>
   <DisplayIndex>0</DisplayIndex>
 </info>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <info PGFVersion="0.19" GSCVersion="0.10.4">
-  <Interface>GroupBehavior</Interface>
-  <ControllerClass>GSGroupBehaviorViewController</ControllerClass>
-  <DisplayName>Movement</DisplayName>
+  <Interface>RuleBehavior</Interface>
+  <ControllerClass>GSRuleBehaviorViewController</ControllerClass>
+  <DisplayName>Flip image</DisplayName>
   <DisplayIndex>0</DisplayIndex>
 </info>
